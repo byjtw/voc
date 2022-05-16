@@ -93,8 +93,8 @@ questionLines = function(){/*--這一行請勿更改--
 [nut]##堅果 unt##mp3/nut.mp3
 [cub]##幼獸 buc##mp3/cub.mp3
 [you]##你 uyo##mp3/you.mp3
-[a]##一個 a##mp3/a .mp3
-[no]##不 on##mp3/no .mp3
+[a]##一個 a##mp3/a.mp3
+[no]##不 on##mp3/no.mp3
 [yes]##是 eys##mp3/yes.mp3
 [not]##不是 otn##mp3/not.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);

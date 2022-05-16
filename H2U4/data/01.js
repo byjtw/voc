@@ -93,8 +93,8 @@ cu[t]##切，剪##mp3/cut.mp3
 [n]u[t]##堅果##mp3/nut.mp3
 cu[b]##幼獸##mp3/cub.mp3
 [y]ou##你##mp3/you.mp3
-[a]##一個##mp3/a .mp3
-[n]o##不##mp3/no .mp3
+[a]##一個##mp3/a.mp3
+[n]o##不##mp3/no.mp3
 [y]e[s]##是##mp3/yes.mp3
 [n]o[t]##不是##mp3/not.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);

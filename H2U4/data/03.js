@@ -93,8 +93,8 @@ h[u]t##小屋 hut##mp3/hut.mp3
 n[u]t##堅果 nut##mp3/nut.mp3
 c[u]b##幼獸 cub##mp3/cub.mp3
 y[ou]##你 you##mp3/you.mp3
-[a]##一個 a##mp3/a .mp3
-[no]##不 no##mp3/no .mp3
+[a]##一個 a##mp3/a.mp3
+[no]##不 no##mp3/no.mp3
 y[e]s##是 yes##mp3/yes.mp3
 n[o]t##不是 not##mp3/not.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
