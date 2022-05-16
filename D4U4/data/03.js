@@ -80,27 +80,27 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[ball]##球 ball
-[box]##盒子 box
-[chair]##椅子 chair
-[desk]##書桌 desk
-[key]##鑰匙 key
-[kite]##風箏 kite
-[table]##桌子 table
-[under]##在...之下 under
-[on]##在...之上 on
-[next] [to]##在...旁邊 next to
-[where]##哪裏 where
-[my]##我的 my
-[in]##在...裡面 in
-[is]##是（用在he/she/it) is
-[are]##是（用在複數,you) are
-[it]##它,牠 it
-[cut]##剪，切 cut
-[cute]##可愛的 cute
-[tub]##浴缸 tub
-[tube]##試管 tube
-[cube]##立方體 cube
-[duke]##公爵 duke
+[ball]##球 ball##mp3/ball.mp3
+[box]##盒子 box##mp3/box.mp3
+[chair]##椅子 chair##mp3/chair.mp3
+[desk]##書桌 desk##mp3/desk.mp3
+[key]##鑰匙 key##mp3/key.mp3
+[kite]##風箏 kite##mp3/kite.mp3
+[table]##桌子 table##mp3/table.mp3
+[under]##在...之下 under##mp3/under.mp3
+[on]##在...之上 on##mp3/on.mp3
+[next] [to]##在...旁邊 next to##mp3/next_to.mp3
+[where]##哪裏 where##mp3/where.mp3
+[my]##我的 my##mp3/my.mp3
+[in]##在...裡面 in##mp3/in.mp3
+[is]##是（用在he/she/it) is##mp3/is.mp3
+[are]##是（用在複數,you) are##mp3/are.mp3
+[it]##它,牠 it##mp3/it.mp3
+[cut]##剪，切 cut##mp3/cut.mp3
+[cute]##可愛的 cute##mp3/cute.mp3
+[tub]##浴缸 tub##mp3/tub.mp3
+[tube]##試管 tube##mp3/tube.mp3
+[cube]##立方體 cube##mp3/cube.mp3
+[duke]##公爵 duke##mp3/duke.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

@@ -80,19 +80,19 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[glasses]##眼鏡（複數）glasses
-[cap]##鴨舌帽 cap
-[umbrella]##雨傘 umbrella
-[wallet]##皮夾 wallet
-[workbook]##習作 workbook
-[backpack]##背包 backpack
-[gloves]##手套（複數）gloves
-[socks]##襪子（複數）socks
-[my]##我的 my
-[your]##你的 your
-[his]##他的 his
-[her]##她的 her
-[Tom's]##湯姆的 Tom's
-[whose]##誰的 whose
+[glasses]##眼鏡（複數）glasses##mp3/glasses.mp3
+[cap]##鴨舌帽cap##mp3/cap.mp3
+[umbrella]##雨傘umbrella##mp3/umbrella.mp3
+[wallet]##皮夾wallet##mp3/wallet.mp3
+[workbook]##習作workbook##mp3/workbook.mp3
+[backpack]##背包backpack##mp3/backpack.mp3
+[gloves]##手套（複數）gloves##mp3/gloves.mp3
+[socks]##襪子（複數）socks##mp3/socks.mp3
+[my]##我的my##mp3/my.mp3
+[your]##你的your##mp3/your.mp3
+[his]##他的his##mp3/his.mp3
+[her]##她的her##mp3/her.mp3
+[Tom's]##湯姆的Tom's##mp3/Tom's.mp3
+[whose]##誰的whose##mp3/whose.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

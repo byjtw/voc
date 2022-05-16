@@ -80,19 +80,19 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-gla[ss]es##眼鏡（複數）
-c[a]p##鴨舌帽
-um[br]ell[a]##雨傘
-w[a]ll[e]t##皮夾
-w[or]kb[oo]k##習作
-ba[ck]pa[ck]##背包
-gl[o]v[e]s##手套（複數）
-so[ck]s##襪子（複數）
-[my]##我的
-y[ou]r##你的
-hi[s]##他的
-h[er]##她的
-Tom'[s]##湯姆的
-[wh]o[s]e##誰的
+gla[ss]es##眼鏡（複數）##mp3/glasses.mp3
+c[a]p##鴨舌帽##mp3/cap.mp3
+um[br]ell[a]##雨傘##mp3/umbrella.mp3
+w[a]ll[e]t##皮夾##mp3/wallet.mp3
+w[or]kb[oo]k##習作##mp3/workbook.mp3
+ba[ck]pa[ck]##背包##mp3/backpack.mp3
+gl[o]v[e]s##手套（複數）##mp3/gloves.mp3
+so[ck]s##襪子（複數）##mp3/socks.mp3
+[my]##我的##mp3/my.mp3
+y[ou]r##你的##mp3/your.mp3
+hi[s]##他的##mp3/his.mp3
+h[er]##她的##mp3/her.mp3
+Tom'[s]##湯姆的##mp3/Tom's.mp3
+[wh]o[s]e##誰的##mp3/whose.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

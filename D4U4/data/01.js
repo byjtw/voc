@@ -31,10 +31,10 @@ tts_enabled = true;
 //----------------
 //
 //如果要使用 Google TTS，就拿掉下面這[4行]最左邊的註解(兩個斜線)
-tts_language = 'en';  // en : 英語,   zh_tw : 中文
-tts_speed = 0.3;  //語音的速度 0 ~ 1 (可用小數)
-tts_base_url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl='+tts_language+'&client=tw-ob&ttsspeed='+tts_speed+'&q=';
-tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
+//tts_language = 'en';  // en : 英語,   zh_tw : 中文
+//tts_speed = 0.3;  //語音的速度 0 ~ 1 (可用小數)
+//tts_base_url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl='+tts_language+'&client=tw-ob&ttsspeed='+tts_speed+'&q=';
+//tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 
 //
 //----------------
@@ -80,27 +80,27 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[b]al[l]##球
-[b]o[x]##盒子
-chai[r]##椅子
-d[e]s[k]##書桌
-[k]ey##鑰匙
-[k]i[t]e##風箏
-[t]a[b]le##桌子
-[u]n[d]er##在...之下
-o[n]##在...之上
-[n]ex[t] [t]o##在...旁邊
-whe[r]e##哪裏
-[m]y##我的
-i[n]##在...裡面
-[i]s##是（用在he/she/it)
-a[r]e##是（用在複數,you)
-i[t]##它,牠
-[c]u[t]##剪，切
-[c]u[t]e##可愛的
-[t]u[b]##浴缸
-[t]u[b]e##試管
-[c]u[b]e##立方體
-[d]u[k]e##公爵
+[b]al[l]##球##mp3/ball.mp3
+[b]o[x]##盒子##mp3/box.mp3
+chai[r]##椅子##mp3/chair.mp3
+d[e]s[k]##書桌##mp3/desk.mp3
+[k]ey##鑰匙##mp3/key.mp3
+[k]i[t]e##風箏##mp3/kite.mp3
+[t]a[b]le##桌子##mp3/table.mp3
+[u]n[d]er##在...之下##mp3/under.mp3
+o[n]##在...之上##mp3/on.mp3
+[n]ex[t] [t]o##在...旁邊##mp3/next_to.mp3
+whe[r]e##哪裏##mp3/where.mp3
+[m]y##我的##mp3/my.mp3
+i[n]##在...裡面##mp3/in.mp3
+[i]s##是（用在he/she/it)##mp3/is.mp3
+a[r]e##是（用在複數,you)##mp3/are.mp3
+i[t]##它,牠##mp3/it.mp3
+[c]u[t]##剪，切##mp3/cut.mp3
+[c]u[t]e##可愛的##mp3/cute.mp3
+[t]u[b]##浴缸##mp3/tub.mp3
+[t]u[b]e##試管##mp3/tube.mp3
+[c]u[b]e##立方體##mp3/cube.mp3
+[d]u[k]e##公爵##mp3/duke.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
