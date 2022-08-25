@@ -81,19 +81,19 @@ seperator = '##';
 //
 questionLines = function(){/*--這一行請勿更改--
 [a]corn##橡子##mp3/acorn.mp3
-[a]x##斧頭##mp3/animal.mp3
-[a]nimal##動物##mp3/ax.mp3
-[b]ell##鐘##mp3/bee.mp3
-[b]ee##蜜蜂##mp3/bell.mp3
+[a]x##斧頭##mp3/ax.mp3
+[a]nimal##動物##mp3/animal.mp3
+[b]ell##鐘##mp3/bell.mp3
+[b]ee##蜜蜂##mp3/bee.mp3
 [b]us##公共汽車##mp3/bus.mp3
 [c]ake##蛋糕##mp3/cake.mp3
-[c]lown##小丑##mp3/clock.mp3
-[c]lock##時鐘##mp3/clown.mp3
-[d]inosaur##恐龍##mp3/dentist.mp3
-[desk##書桌##mp3/desk.mp3
-[d]entist##牙醫##mp3/dinosaur.mp3
-[e]lf##精靈##mp3/elbow.mp3
-[e]lbow##手肘##mp3/elf.mp3
+[c]lown##小丑##mp3/clown.mp3
+[c]lock##時鐘##mp3/clock.mp3
+[d]inosaur##恐龍##mp3/dinosaur.mp3
+[d]esk##書桌##mp3/desk.mp3
+[d]entist##牙醫##mp3/dentist.mp3
+[e]lf##精靈##mp3/elf.mp3
+[e]lbow##手肘##mp3/elbow.mp3
 [e]nvelope##信封##mp3/envelope.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
