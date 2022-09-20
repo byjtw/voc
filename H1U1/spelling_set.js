@@ -19,7 +19,7 @@ CR_LF_First_Pos = CR_LF_test.indexOf('_LF')-'CR_LF'.indexOf('_LF');
 
 //
 //上方標題
-title = 'H3U1單字';
+title = 'H1U1單字';
 
 //
 //虛擬鍵盤是否使用數字(使用: true, 不使用: false)
