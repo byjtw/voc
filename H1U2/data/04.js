@@ -42,7 +42,7 @@ tts_enabled = false;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 300;
+timer = 600;
 
 //
 //答對一題加幾分
@@ -68,28 +68,24 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[six]##六_six##mp3/six.mp3
-[seven]##七_seven##mp3/seven.mp3
-[eight]##八_eight##mp3/eight.mp3
-[nine]##九_nine##mp3/nine.mp3
-[ten]##十_ten##mp3/ten.mp3
-[how old]##幾歲_how old##mp3/how old.mp3
-[are]##是_are##mp3/are.mp3
-[you]##你_you##mp3/you.mp3
-[year]##年/歲_year##mp3/year.mp3
-[one]##一_one##mp3/one.mp3
-[two]##二_two##mp3/two.mp3
-[three]##三_three##mp3/three.mp3
-[four]##四_four##mp3/four.mp3
-[five]##五_five##mp3/five.mp3
-[key]##鑰匙_key##mp3/key.mp3
-[kite]##風箏_kite##mp3/kite.mp3
-[lion]##獅子_lion##mp3/lion.mp3
-[leg]##腳_leg##mp3/leg.mp3
-[monkey]##猴子_monkey##mp3/monkey.mp3
-[milk]##牛奶_milk##mp3/milk.mp3
-[nose]##鼻子_nose##mp3/nose.mp3
-[neck]##脖子_neck##mp3/neck.mp3
-[ox]##公牛_ox##mp3/ox.mp3
-[otter]##水獺_otter##mp3/otter.mp3
+[six]##六_isx##mp3/six.mp3
+[seven]##七_nesve##mp3/seven.mp3
+[eight]##八_ehgit##mp3/eight.mp3
+[nine]##九_inne##mp3/nine.mp3
+[ten]##十_etn##mp3/ten.mp3
+[one]##一_oen##mp3/one.mp3
+[two]##二_tow##mp3/two.mp3
+[three]##三_rteeh##mp3/three.mp3
+[four]##四_frou##mp3/four.mp3
+[five]##五_vefi##mp3/five.mp3
+[key]##鑰匙_eyk##mp3/key.mp3
+[kite]##風箏_ekti##mp3/kite.mp3
+[lion]##獅子_ilon##mp3/lion.mp3
+[leg]##腳_gle##mp3/leg.mp3
+[monkey]##猴子_eynomk##mp3/monkey.mp3
+[milk]##牛奶_lmki##mp3/milk.mp3
+[nose]##鼻子_osne##mp3/nose.mp3
+[neck]##脖子_cnek##mp3/neck.mp3
+[ox]##公牛_xo##mp3/ox.mp3
+[otter]##水獺_teotr##mp3/otter.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

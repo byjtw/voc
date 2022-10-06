@@ -73,10 +73,6 @@ questionLines = function(){/*--這一行請勿更改--
 [eight]##八_eight##mp3/eight.mp3
 [nine]##九_nine##mp3/nine.mp3
 [ten]##十_ten##mp3/ten.mp3
-[how old]##幾歲_how old##mp3/how old.mp3
-[are]##是_are##mp3/are.mp3
-[you]##你_you##mp3/you.mp3
-[year]##年/歲_year##mp3/year.mp3
 [one]##一_one##mp3/one.mp3
 [two]##二_two##mp3/two.mp3
 [three]##三_three##mp3/three.mp3
