@@ -68,28 +68,20 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[six]##六_six##mp3/six.mp3
-[seven]##七_seven##mp3/seven.mp3
-[eight]##八_eight##mp3/eight.mp3
-[nine]##九_nine##mp3/nine.mp3
-[ten]##十_ten##mp3/ten.mp3
-[how old]##幾歲_how old##mp3/how old.mp3
-[are]##是_are##mp3/are.mp3
-[you]##你_you##mp3/you.mp3
-[year]##年/歲_year##mp3/year.mp3
-[one]##一_one##mp3/one.mp3
-[two]##二_two##mp3/two.mp3
-[three]##三_three##mp3/three.mp3
-[four]##四_four##mp3/four.mp3
-[five]##五_five##mp3/five.mp3
-[key]##鑰匙_key##mp3/key.mp3
-[kite]##風箏_kite##mp3/kite.mp3
-[lion]##獅子_lion##mp3/lion.mp3
-[leg]##腳_leg##mp3/leg.mp3
-[monkey]##猴子_monkey##mp3/monkey.mp3
-[milk]##牛奶_milk##mp3/milk.mp3
-[nose]##鼻子_nose##mp3/nose.mp3
-[neck]##脖子_neck##mp3/neck.mp3
-[ox]##公牛_ox##mp3/ox.mp3
-[otter]##水獺_otter##mp3/otter.mp3
+[Abu]##阿布(男子名)_Abu##mp3/Abu.mp3
+[Amber]##安柏(女子名)_Amber##mp3/Amber.mp3
+[Edison]##愛迪生(男子名)_Edison##mp3/Edison.mp3
+[Teddy]##泰迪(男子名)_Teddy##mp3/Teddy.mp3
+[Rocky]##洛基(男子名)_Rocky##mp3/Rocky.mp3
+[Mia]##米亞(女子名)_Mia##mp3/Mia.mp3
+[fan]##風扇_fan##mp3/fan.mp3
+[fish]##魚_fish##mp3/fish.mp3
+[girl]##女孩_girl##mp3/girl.mp3
+[goat]##公羊_goat##mp3/goat.mp3
+[hand]##手_hand##mp3/hand.mp3
+[hat]##帽子_hat##mp3/hat.mp3
+[ink]##墨水_ink##mp3/ink.mp3
+[insect]##昆蟲_insect##mp3/insect.mp3
+[jam]##果醬_jam##mp3/jam.mp3
+[jet]##噴射機_jet##mp3/jet.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);
