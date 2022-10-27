@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------
+//-----------------------------------------------------------
 // UNSCRAMBLE 題庫設定檔
 //-----------------------------------------------------------
 
@@ -83,7 +83,7 @@ split_by_length_substring_length = 1;	//當 split_by_length 為 true , 子字串
 //----------------
 question_lines=new Array(
 //------------------------------------下一行開始增加題目
-  "How old are you?###你好嗎###mp3/how_old_are_you.mp3"
+  "How old are you?###你幾歲###mp3/how_old_are_you.mp3"
 , "I am eight.###我八歲###mp3/i_m_eight.mp3"
 , "I am ten years old.###我十歲###mp3/i_m_ten_years_old.mp3"
 , "I am seven.###我七歲###mp3/i_m_seven.mp3"
