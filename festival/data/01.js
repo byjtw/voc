@@ -68,7 +68,7 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-a [p]um[k]in##一個南瓜##mp3/a pumpkin.mp3
+a [p]ump[k]in##一個南瓜##mp3/a pumpkin.mp3
 a [bat]##一隻蝙蝠##mp3/a bat.mp3
 a gho[st]##一隻鬼##mp3/a ghost.mp3
 a [vam]pire##一個吸血鬼##mp3/a vampire.mp3
