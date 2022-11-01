@@ -1,4 +1,4 @@
-//-----------------------------------------------------------
+﻿//-----------------------------------------------------------
 // UNSCRAMBLE 題庫設定檔
 //-----------------------------------------------------------
 
@@ -83,17 +83,23 @@ split_by_length_substring_length = 1;	//當 split_by_length 為 true , 子字串
 //----------------
 question_lines=new Array(
 //------------------------------------下一行開始增加題目
-  "How old are you?###你幾歲###mp3/how_old_are_you.mp3"
-, "I am eight.###我八歲###mp3/i_m_eight.mp3"
-, "I am ten years old.###我十歲###mp3/i_m_ten_years_old.mp3"
-, "I am seven.###我七歲###mp3/i_m_seven.mp3"
-, "I am fine.###我很好###mp3/i_m_fine.mp3"
-, "How are you?###你好嗎###mp3/how_are_you.mp3"
-, "I am Edison.###我是愛迪生###mp3/i_m_edison.mp3"
-, "My name is Teddy.###我叫泰迪###mp3/my_name_is_teddy.mp3"
-, "Thank you!###謝謝你###mp3/thank_you.mp3"
-, "What's your name?###你叫什麼名字###mp3/whats_your_name.mp3"
-, "You're welcome.###不客氣###mp3/youre_welcome.mp3"
+  "What's this?###這是什麼"
+, "What's that?###那是什麼"
+, "What is this?###這是什麼"
+, "What is that?###那是什麼"
+, "It's a book.###它是一本書"
+, "It's a pencil.###它是一支筆"
+, "It's an eraser.###它是一個橡皮擦"
+, "It's a marker.###它是一支彩色筆"
+, "It's a pen.###它是一支原子筆"
+, "It's a ruler.###它是一支尺"
+, "What is it?###它是什麼"
+, "It is a book.###它是一本書"
+, "It is a pencil.###它是一支筆"
+, "It is an eraser.###它是一個橡皮擦"
+, "It is a marker.###它是一支彩色筆"
+, "It is a pen.###它是一支原子筆"
+, "It is a ruler.###它是一支尺"
 //------------------------------------題庫結束,以下請勿修改
 );
 

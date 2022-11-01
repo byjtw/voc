@@ -7,7 +7,7 @@
 //---------------------------------------------------
 //
 //是否使用 TTS 的語音(使用: true, 不使用: false)
-tts_enabled = false;
+tts_enabled = true;
 
 //
 //----------------
@@ -16,10 +16,10 @@ tts_enabled = false;
 //----------------
 //
 //如果要使用 Google TTS，就拿掉下面這[4行]最左邊的註解(兩個斜線)
-//tts_language = 'en';  // en : 英語,   zh_tw : 中文
-//tts_speed = 0.3;  //語音的速度 0 ~ 1 (可用小數)
-//tts_base_url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl='+tts_language+'&client=tw-ob&ttsspeed='+tts_speed+'&q=';
-//tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
+tts_language = 'en';  // en : 英語,   zh_tw : 中文
+tts_speed = 0.3;  //語音的速度 0 ~ 1 (可用小數)
+tts_base_url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl='+tts_language+'&client=tw-ob&ttsspeed='+tts_speed+'&q=';
+tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 
 //
 //----------------
@@ -42,7 +42,7 @@ tts_enabled = false;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 300;
+timer = 180;
 
 //
 //答對一題加幾分
@@ -68,11 +68,15 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-angr[y]##生氣的##mp3/angry.mp3
-happ[y]##快樂的##mp3/happy.mp3
-[sa]d##難過的##mp3/sad.mp3
-t[i]r[e]d##很累的##mp3/tired.mp3
-hun[gry]##肚子餓的##mp3/hungry.mp3
-[thir]sty##口渴的##mp3/thirsty.mp3
-fu[ll]##飽的##mp3/full.mp3
+a [m]oon [c]a[k]e##一個月餅##mp3/a mooncake.mp3
+a [p]o[m]e[l]o##一個柚子##mp3/a pomelo.mp3
+ea[t]##吃##mp3/eat.mp3
+Cha[ng]-O##嫦娥##mp3/Chang-O.mp3
+Ja[d]e R[a]bb[i]t##玉兔##mp3/Jade Rabbit.mp3
+Moo[n] [f]es[t]i[v]a[l]##中秋節##mp3/moon festival.mp3
+[l]an[t]er[n]##燈籠##mp3/lantern.mp3
+[m]oo[n]##月亮##mp3/moon.mp3
+[c]a[k]e##蛋糕##mp3/cake.mp3
+Look at the moon.##看月亮##mp3/look at the moon.mp3
+Let's eat moon cakes.##我們來吃月餅吧##mp3/look at the moon.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

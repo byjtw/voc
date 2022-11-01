@@ -83,17 +83,16 @@ split_by_length_substring_length = 1;	//當 split_by_length 為 true , 子字串
 //----------------
 question_lines=new Array(
 //------------------------------------下一行開始增加題目
-  "How old are you?###mp3/how_old_are_you.mp3"
-, "I am eight.###mp3/i_m_eight.mp3"
-, "I am ten years old.###mp3/i_m_ten_years_old.mp3"
-, "I am se]ven.###mp3/i_m_seven.mp3"
-, "I am fine.###mp3/i_m_fine.mp3"
-, "How are you?###mp3/how_are_you.mp3"
-, "I am Edison.###mp3/i_m_edison.mp3"
-, "My name is Teddy.###mp3/my_name_is_teddy.mp3"
-, "Thank you!###mp3/thank_you.mp3"
-, "What's your name?###mp3/whats_your_name.mp3"
-, "You're welcome.###mp3/youre_welcome.mp3"
+  "What are these?###這些是什麼"
+, "They're oranges.###它們是柳橙"
+, "They are hot dogs.###它們是熱狗"
+, "What are those?###那些是什麼"
+, "Do you like apples? Yes, I do.###你喜歡蘋果嗎?是的,我喜歡"
+, "Do you like watermelons? No, I don't.###你喜歡西瓜嗎?不,我不喜歡"
+, "I like bananas.###我喜歡香蕉"
+, "Do you like hamburgers?###你喜歡漢堡嗎"
+, "I don't like sandwiches.###我不喜歡三明治"
+, "You like hamburgers.###你喜歡漢堡"
 //------------------------------------題庫結束,以下請勿修改
 );
 
