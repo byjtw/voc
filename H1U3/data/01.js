@@ -68,12 +68,12 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-a [b]oo[k]##書##mp3/a book.mp3
-a [pe]n##原子筆##mp3/a pen.mp3
-a [pe]ncil##鉛筆##mp3/a pencil.mp3
-a[n] e[r]aser##橡皮擦##mp3/an eraser.mp3
-a [r]u[l]er##尺##mp3/a ruler.mp3
-a [m]ar[k]er##彩色筆##mp3/a marker.mp3
+a [b]oo[k]##一本書##mp3/a book.mp3
+a [pe]n##一支原子筆##mp3/a pen.mp3
+a [pe]ncil##一支鉛筆##mp3/a pencil.mp3
+a[n] e[r]aser##一個橡皮擦##mp3/an eraser.mp3
+a [r]u[l]er##一支尺##mp3/a ruler.mp3
+a [m]ar[k]er##一支彩色筆##mp3/a marker.mp3
 th[i]s##這個##mp3/this.mp3
 th[at]##那個##mp3/that.mp3
 [it]##它/牠##mp3/it.mp3
