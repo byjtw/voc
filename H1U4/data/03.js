@@ -81,7 +81,7 @@ questionLines = function(){/*--這一行請勿更改--
 [watch]##手錶_watch##mp3/watch.mp3
 [window]##窗戶_window##mp3/window.mp3
 [yogurt]##優格_yogurt##mp3/yogurt.mp3
-[yo-yo]##溜溜球_yo-yo##mp3/yo-yo.mp3
+[yo]-[yo]##溜溜球_yo-yo##mp3/yo-yo.mp3
 [zebra]##斑馬_zebra##mp3/zebra.mp3
 [zoo]##動物園_zoo##mp3/zoo.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);
