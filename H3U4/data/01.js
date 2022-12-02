@@ -68,11 +68,12 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[a]pples##蘋果複數##mp3/apples.mp3
-[b]a[n]a[n]as##香蕉複數##mp3/bananas.mp3
-o[r]a[n]ges##柳橙複數##mp3/oranges.mp3
-[ham]bur[g]ers##漢堡複數##mp3/hamburgers.mp3
-h[o]t [d]o[g]s##熱狗複數##mp3/hot dogs.mp3
-[sa]nd[wi]ches##三明治複數##mp3/sandwiches.mp3
-[w]a[t]er[m]e[l]ons##西瓜複數##mp3/watermelons.mp3
+[j]uice##果汁##mp3/juice.mp3
+[milk]##牛奶##mp3/milk.mp3
+[w]a[t]er##水##mp3/water.mp3
+[t]ea##茶##mp3/tea.mp3
+[c]a[k]e##蛋糕##mp3/cake.mp3
+[pi]zza##披薩##mp3/pizza.mp3
+[r]ice##米飯##mp3/rice.mp3
+ice [cr]ea[m]##冰淇淋##mp3/ice cream.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);
