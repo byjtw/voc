@@ -75,5 +75,5 @@ questionLines = function(){/*--這一行請勿更改--
 [cake]##蛋糕_cake##mp3/cake.mp3
 [pizza]##披薩_pizza##mp3/pizza.mp3
 [rice]##米飯_rice##mp3/rice.mp3
-[ice cream]##冰淇淋_ice cream##mp3/ice cream.mp3
+[ice] [cream]##冰淇淋_ice cream##mp3/ice cream.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);
