@@ -74,14 +74,4 @@ bl[ue]##藍色的##mp3/blue.mp3
 [wh]ite##白色的##mp3/white.mp3
 gr[ee]n##綠色的##mp3/green.mp3
 yell[ow]##黃色的##mp3/yellow.mp3
-umbrell[a]##雨傘##mp3/umbrella.mp3
-[up]##往上##mp3/up.mp3
-[van]##箱型車##mp3/van.mp3
-[vest]##背心##mp3/vest.mp3
-w[a]tch##手錶##mp3/watch.mp3
-wind[ow]##窗戶##mp3/window.mp3
-yog[ur]t##優格##mp3/yogurt.mp3
-y[o]-y[o]##溜溜球##mp3/yo-yo.mp3
-z[e]br[a]##斑馬##mp3/zebra.mp3
-z[oo]##動物園##mp3/zoo.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

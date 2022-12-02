@@ -42,7 +42,7 @@ tts_enabled = false;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 600;
+timer = 300;
 
 //
 //答對一題加幾分
@@ -68,10 +68,11 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[black]##黑色的##mp3/black.mp3
-[blue]##藍色的##mp3/blue.mp3
-[red]##紅色的##mp3/red.mp3
-[white]##白色的##mp3/white.mp3
-[green]##綠色的##mp3/green.mp3
-[yellow]##黃色的##mp3/yellow.mp3
+a[pp]les##蘋果複數##mp3/apples.mp3
+b[a]n[a]n[a]s##香蕉複數##mp3/bananas.mp3
+[o]ran[ge]s##柳橙複數##mp3/oranges.mp3
+ham[bur]g[er]s##漢堡複數##mp3/hamburgers.mp3
+[hot] [dog]s##熱狗複數##mp3/hot dogs.mp3
+sa[nd]wi[ch]es##三明治複數##mp3/sandwiches.mp3
+w[a]t[er]me[lon]s##西瓜複數##mp3/watermelons.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

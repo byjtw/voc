@@ -74,14 +74,4 @@ questionLines = function(){/*--這一行請勿更改--
 [white]##白色的_white##mp3/white.mp3
 [green]##綠色的_green##mp3/green.mp3
 [yellow]##黃色的_yellow##mp3/yellow.mp3
-[umbrella]##雨傘_umbrella##mp3/umbrella.mp3
-[up]##往上_up##mp3/up.mp3
-[van]##箱型車_van##mp3/van.mp3
-[vest]##背心_vest##mp3/vest.mp3
-[watch]##手錶_watch##mp3/watch.mp3
-[window]##窗戶_window##mp3/window.mp3
-[yogurt]##優格_yogurt##mp3/yogurt.mp3
-[yo]-[yo]##溜溜球_yo-yo##mp3/yo-yo.mp3
-[zebra]##斑馬_zebra##mp3/zebra.mp3
-[zoo]##動物園_zoo##mp3/zoo.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

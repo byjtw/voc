@@ -68,10 +68,11 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[black]##黑色的##mp3/black.mp3
-[blue]##藍色的##mp3/blue.mp3
-[red]##紅色的##mp3/red.mp3
-[white]##白色的##mp3/white.mp3
-[green]##綠色的##mp3/green.mp3
-[yellow]##黃色的##mp3/yellow.mp3
+[apples]##蘋果複數_epalps##mp3/apples.mp3
+[bananas]##香蕉複數_ananabs##mp3/bananas.mp3
+[oranges]##柳橙複數_ngoaers##mp3/oranges.mp3
+[hamburgers]##漢堡複數_raemhgurbs##mp3/hamburgers.mp3
+[hot] [dogs]##熱狗複數_tho gods##mp3/hot dogs.mp3
+[sandwiches]##三明治複數_widnasches##mp3/sandwiches.mp3
+[watermelons]##西瓜複數_onmelerwtas##mp3/watermelons.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);
