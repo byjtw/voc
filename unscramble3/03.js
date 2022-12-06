@@ -83,15 +83,23 @@ split_by_length_substring_length = 1;	//當 split_by_length 為 true , 子字串
 //----------------
 question_lines=new Array(
 //------------------------------------下一行開始增加題目
-  "How old are you?###你幾歲###mp3/how_old_are_you.mp3"
-, "I am eight.###我八歲###mp3/i_m_eight.mp3"
-, "I am ten years old.###我十歲###mp3/i_m_ten_years_old.mp3"
-, "I am seven.###我七歲###mp3/i_m_seven.mp3"
-, "Thank you!###謝謝你"
-, "You're welcome.###不客氣###mp3/youre_welcome.mp3"
-, "I'm five.###我七歲"
-, "I'm six years old.###我六歲"
-, "I am nine years old.###我九歲"
+  "What's this?###這是什麼"
+, "What's that?###那是什麼"
+, "What is this?###這是什麼"
+, "What is that?###那是什麼"
+, "It's a book.###它是一本書"
+, "It's a pencil.###它是一支筆"
+, "It's an eraser.###它是一個橡皮擦"
+, "It's a marker.###它是一支彩色筆"
+, "It's a pen.###它是一支原子筆"
+, "It's a ruler.###它是一支尺"
+, "What is it?###它是什麼"
+, "It is a book.###它是一本書"
+, "It is a pencil.###它是一支筆"
+, "It is an eraser.###它是一個橡皮擦"
+, "It is a marker.###它是一支彩色筆"
+, "It is a pen.###它是一支原子筆"
+, "It is a ruler.###它是一支尺"
 //------------------------------------題庫結束,以下請勿修改
 );
 
