@@ -83,10 +83,10 @@ split_by_length_substring_length = 1;	//當 split_by_length 為 true , 子字串
 //----------------
 question_lines=new Array(
 //------------------------------------下一行開始增加題目
-  "What do you want?###你要什麼?"
+  "What do you want?###你要什麼"
 , "I want some juice.###我要一些果汁"
 , "I want some rice.###我要一些米"
-, "What do you want?###你們要什麼?"
+, "What do you want?###你們要什麼"
 , "We want some ice cream.###我們要一些冰淇淋"
 , "We want some water.###我們要一些水"
 , "Do you want water? No, I don't.###你要水嗎?不，我不要"
