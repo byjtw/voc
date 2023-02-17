@@ -85,5 +85,8 @@ thir[t]y##30
 [f]or[t]y##40
 [f][i]f[t]y##50
 f[i]v[e]##5
+wha[t]##什麼
+[t]i[m]e##時間
+o'c[lo]ck##點鐘
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

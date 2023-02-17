@@ -85,5 +85,8 @@ questionLines = function(){/*--這一行請勿更改--
 [forty]##40
 [fifty]##50
 [five]##5
+[what]##什麼
+[time]##時間
+o'[clock]##點鐘
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
