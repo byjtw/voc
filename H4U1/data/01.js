@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -88,5 +88,25 @@ f[i]v[e]##5
 wha[t]##什麼
 [t]i[m]e##時間
 o'c[lo]ck##點鐘
+[cl]ock##時鐘
+[one]##1
+[two]##2
+th[r]ee##3
+[f]ou[r]##4
+[f]i[v]e##5
+[six]##6
+[sev]e[n]##7
+eigh[t]##8
+[n]i[n]e##9
+[t]e[n]##10
+e[lev]e[n]##11
+tw[elv]e##12
+thir[t]ee[n]##13
+[f]ou[rt]ee[n]##14
+[fift]ee[n]##15
+[sixt]ee[n]##16
+[sev]e[nt]ee[n]##17
+eigh[t]ee[n]##18
+[n]i[n]e[t]ee[n]##19
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
