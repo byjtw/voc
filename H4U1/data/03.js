@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -88,5 +88,25 @@ questionLines = function(){/*--這一行請勿更改--
 [what]##什麼
 [time]##時間
 o'[clock]##點鐘
+[clock]##時鐘
+[one]##1 
+[two]##2 
+[three]##3 
+[four]##4  
+[five]##5 
+[six]##6 
+[seven]##7 
+[eight]##8 
+[nine]##9 
+[ten]##10 
+[eleven]##11 
+[twelve]##12 
+[thirteen]##13 
+[fourteen]##14 teenuorf
+[fifteen]##15 
+[sixteen]##16 
+[seventeen]##17 
+[eighteen]##18 
+[nineteen]##19 
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
