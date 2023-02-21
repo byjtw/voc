@@ -85,28 +85,28 @@ questionLines = function(){/*--這一行請勿更改--
 [forty]##40forty
 [fifty]##50fifty
 [five]##5five
-[what]##什麼tahw
-[time]##時間meit
-o'[clock]##點鐘olcck
-[clock]##時鐘olcck
-[one]##1 eno
-[two]##2 otw
-[three]##3 ereht
-[four]##4 oruf 
-[five]##5 vief
-[six]##6 ixs
-[seven]##7 evnes
-[eight]##8 ghiet
-[nine]##9 inne
-[ten]##10 ent
-[eleven]##11 leveen
-[twelve]##12 vewelt
-[thirteen]##13 eetnriht
-[fourteen]##14 teenuorf
-[fifteen]##15 neeftif
-[sixteen]##16 txeneis
-[seventeen]##17 eentnvees
-[eighteen]##18 gheetnie
-[nineteen]##19 innieent
+[what]##什麼what
+[time]##時間time
+o'[clock]##點鐘o'clock
+[clock]##時鐘clock
+[one]##1 one
+[two]##2 two
+[three]##3 three
+[four]##4 four
+[five]##5 five
+[six]##6 six
+[seven]##7 seven
+[eight]##8 eight
+[nine]##9 nine
+[ten]##10 ten
+[eleven]##11 eleven
+[twelve]##12 twelve
+[thirteen]##13 thirteen
+[fourteen]##14 fourteen
+[fifteen]##15 fifteen
+[sixteen]##16 sixteen
+[seventeen]##17 seventeen
+[eighteen]##18 eighteen
+[nineteen]##19 nineteen
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
