@@ -1,4 +1,4 @@
-//=======================================================
+﻿//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -80,18 +80,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-st[u]d[e]nt##學生##mp3/student.mp3
+[s]tu[d]e[nt]##學生##mp3/student.mp3
 [t]eache[r]##老師##mp3/teacher.mp3
-[d]oc[t]or##醫生##mp3/doctor.mp3
+[d]o[ct]or##醫生##mp3/doctor.mp3
 [n]ur[s]e##護士##mp3/nurse.mp3
-coo[k]##廚師##mp3/cook.mp3
+[c]oo[k]##廚師##mp3/cook.mp3
 [d]ri[v]er##司機##mp3/driver.mp3
-cu[t]##切，剪##mp3/cut.mp3
+[c]u[t]##切，剪##mp3/cut.mp3
 [s]u[b]##潛水艇##mp3/sub.mp3
 [t]u[b]##浴缸##mp3/tub.mp3
 [h]u[t]##小屋##mp3/hut.mp3
 [n]u[t]##堅果##mp3/nut.mp3
-cu[b]##幼獸##mp3/cub.mp3
+[c]u[b]##幼獸##mp3/cub.mp3
 [y]ou##你##mp3/you.mp3
 [a]##一個##mp3/a.mp3
 [n]o##不##mp3/no.mp3
