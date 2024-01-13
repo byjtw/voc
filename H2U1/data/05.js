@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -80,19 +80,20 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[small]##小的
-[big]##大的
-[dog]##狗
-[cat]##貓
-[bird]##鳥
-[fish]##魚
-[yes]##是的
-[not]##不是
-[n]o##不
-[th]is##這
-[th]at##那
-[it]##它
-[what]##什麼
+[small]##小的##mp3/small.mp3
+[big]##大的##mp3/big.mp3
+[dog]##狗##mp3/dog.mp3
+[cat]##貓##mp3/cat.mp3
+[bird]##鳥##mp3/bird.mp3
+[fish]##魚##mp3/fish.mp3
+[no]##不##mp3/no.mp3
+[not]##不是##mp3/not.mp3
+[yes]##是的##mp3/yes.mp3
+[it]##它##mp3/it.mp3
+[is]##是##mp3/is.mp3
+[this]##這##mp3/this.mp3
+[that]##那##mp3/that.mp3
+[what]##什麼##mp3/what.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
 

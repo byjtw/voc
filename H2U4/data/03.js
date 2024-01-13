@@ -80,23 +80,19 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[student]##學生 student##mp3/student.mp3
-[teacher]##老師 teacher##mp3/teacher.mp3
-[doctor]##醫生 doctor##mp3/doctor.mp3
-[nurse]##護士 nurse##mp3/nurse.mp3
-[cook]##廚師 cook##mp3/cook.mp3
-[driver]##司機 driver##mp3/driver.mp3
-c[u]t##切，剪 cut##mp3/cut.mp3
-s[u]b##潛水艇 sub##mp3/sub.mp3
-t[u]b##浴缸 tub##mp3/tub.mp3
-h[u]t##小屋 hut##mp3/hut.mp3
-n[u]t##堅果 nut##mp3/nut.mp3
-c[u]b##幼獸 cub##mp3/cub.mp3
-y[ou]##你 you##mp3/you.mp3
-[a]##一個 a##mp3/a.mp3
-[no]##不 no##mp3/no.mp3
-y[e]s##是 yes##mp3/yes.mp3
-n[o]t##不是 not##mp3/not.mp3
+[a] [student]##一個學生a student##mp3/a student.mp3
+[a] [teacher]##一位老師a teacher##mp3/a teacher.mp3
+[a] [doctor]##醫生a doctor##mp3/a doctor.mp3
+[a] [nurse]##護士a nurse##mp3/a nurse.mp3
+[a] [cook]##一名廚師a cook##mp3/a cook.mp3
+[a] [driver]##一個司機a driver##mp3/a driver.mp3
+[you]##你you##mp3/you.mp3
+[no]##不no ##mp3/no.mp3
+[yes]##是的yes##mp3/yes.mp3
+[not]##不是not##mp3/not.mp3
+[he]##他he##mp3/he.mp3
+[she]##她she##mp3/she.mp3
+[I]##我I##mp3/I.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
 

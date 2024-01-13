@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -57,8 +57,7 @@ tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 600;
-
+timer = 300;
 //
 //答對一題加幾分
 number_of_points_for_one_question = 10;
@@ -80,22 +79,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[s]tu[d]e[nt]##學生##mp3/student.mp3
-[t]eache[r]##老師##mp3/teacher.mp3
-[d]o[ct]or##醫生##mp3/doctor.mp3
-[n]ur[s]e##護士##mp3/nurse.mp3
-[c]oo[k]##廚師##mp3/cook.mp3
-[d]ri[v]er##司機##mp3/driver.mp3
-[c]u[t]##切，剪##mp3/cut.mp3
-[s]u[b]##潛水艇##mp3/sub.mp3
-[t]u[b]##浴缸##mp3/tub.mp3
-[h]u[t]##小屋##mp3/hut.mp3
-[n]u[t]##堅果##mp3/nut.mp3
-[c]u[b]##幼獸##mp3/cub.mp3
+a [st]u[d]e[nt]##一個學生##mp3/a student.mp3
+a [t]eache[r]##一位老師##mp3/a teacher.mp3
+a [d]o[ct]or##醫生##mp3/a doctor.mp3
+a [n]ur[s]e##護士##mp3/a nurse.mp3
+a [c]oo[k]##一名廚師##mp3/a cook.mp3
+a [d]ri[v]er##一個司機##mp3/a driver.mp3
 [y]ou##你##mp3/you.mp3
-[a]##一個##mp3/a.mp3
-[n]o##不##mp3/no.mp3
-[y]e[s]##是##mp3/yes.mp3
+[n]o##不##mp3/no .mp3
+[y]e[s]##是的##mp3/yes.mp3
 [n]o[t]##不是##mp3/not.mp3
+[he]##他##mp3/he.mp3
+[she]##她##mp3/she.mp3
+[I]##我##mp3/I.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

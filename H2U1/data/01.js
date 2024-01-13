@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -57,7 +57,7 @@ tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 600;
+timer = 120;
 
 //
 //答對一題加幾分
@@ -80,18 +80,19 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-small##小的
-[b][i][g]##大的
-[d]o[g]##狗
-[c][a][t]##貓
-[b]ir[d]##鳥
-[f][i]sh##魚
-wha[t]##什麼
-th[is]##這
-th[at]##那
-[yes]##是的
-[not]##不是
-[n]o##不
-[it]##它
+[sm]all##小的##mp3/small.mp3
+[big]##大的##mp3/big.mp3
+[d]o[g]##狗##mp3/dog.mp3
+[cat]##貓##mp3/cat.mp3
+[b]ir[d]##鳥##mp3/bird.mp3
+[fi]sh##魚##mp3/fish.mp3
+[n]o##不##mp3/no.mp3
+[not]##不是##mp3/not.mp3
+[yes]##是的##mp3/yes.mp3
+[it]##它##mp3/it.mp3
+[is]##是##mp3/is.mp3
+th[is]##這##mp3/this.mp3
+th[at]##那##mp3/that.mp3
+wha[t]##什麼##mp3/what.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
