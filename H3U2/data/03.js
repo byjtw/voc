@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -42,7 +42,7 @@ tts_enabled = false;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 300;
+timer = 600;
 
 //
 //答對一題加幾分
@@ -68,11 +68,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[angry]##生氣的_angry##mp3/angry.mp3
-[happy]##快樂的_happy##mp3/happy.mp3
-[sad]##難過的_sad##mp3/sad.mp3
-[tired]##很累的_tired##mp3/tired.mp3
-[hungry]##肚子餓的_hungry##mp3/hungry.mp3
-[thirsty]##口渴的_thirsty##mp3/thirsty.mp3
-[full]##飽的_full##mp3/full.mp3
+[angry]##生氣的angry##mp3/angry.mp3
+[happy]##快樂的happy##mp3/happy.mp3
+[sad]##傷心sad##mp3/sad.mp3
+[hungry]##飢餓的hungry##mp3/hungry.mp3
+[thirsty]##三十thirsty##mp3/thirsty.mp3
+[full]##滿的full##mp3/full.mp3
+[tired]##疲勞的tired##mp3/tired.mp3
+[are]##是_用於第二人稱are##mp3/are.mp3
+[is]##是_用於第三人稱is##mp3/is.mp3
+[am]##是_用於第一人稱am##mp3/am.mp3
+[I]##我I##mp3/I.mp3
+[you]##你you##mp3/you.mp3
+[he]##他he##mp3/he.mp3
+[she]##她she##mp3/she.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

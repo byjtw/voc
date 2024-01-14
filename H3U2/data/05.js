@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -70,9 +70,16 @@ seperator = '##';
 questionLines = function(){/*--這一行請勿更改--
 [angry]##生氣的##mp3/angry.mp3
 [happy]##快樂的##mp3/happy.mp3
-[sad]##難過的##mp3/sad.mp3
-[tired]##很累的##mp3/tired.mp3
-[hungry]##肚子餓的##mp3/hungry.mp3
-[thirsty]##口渴的##mp3/thirsty.mp3
-[full]##飽的##mp3/full.mp3
+[sad]##傷心##mp3/sad.mp3
+[hungry]##飢餓的##mp3/hungry.mp3
+[thirsty]##三十##mp3/thirsty.mp3
+[full]##滿的##mp3/full.mp3
+[tired]##疲勞的##mp3/tired.mp3
+[are]##是_用於第二人稱##mp3/are.mp3
+[is]##是_用於第三人稱##mp3/is.mp3
+[am]##是_用於第一人稱##mp3/am.mp3
+[I]##我##mp3/I.mp3
+[you]##你##mp3/you.mp3
+[he]##他##mp3/he.mp3
+[she]##她##mp3/she.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -74,6 +74,15 @@ questionLines = function(){/*--這一行請勿更改--
 [tea]##茶##mp3/tea.mp3
 [cake]##蛋糕##mp3/cake.mp3
 [pizza]##披薩##mp3/pizza.mp3
-[rice]##米飯##mp3/rice.mp3
+[rice]##米##mp3/rice.mp3
 [ice] [cream]##冰淇淋##mp3/ice cream.mp3
+[drinks]##飲料##mp3/drinks.mp3
+[food]##食物##mp3/food.mp3
+[do]##助動詞##mp3/do.mp3
+[you]##你##mp3/you.mp3
+[want]##想要##mp3/want.mp3
+[I]##我##mp3/I.mp3
+[some]##一些##mp3/some.mp3
+[don]'[t]##不##mp3/don't.mp3
+[we]##我們##mp3/we.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

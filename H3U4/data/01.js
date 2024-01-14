@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -42,7 +42,7 @@ tts_enabled = false;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 180;
+timer =300;
 
 //
 //答對一題加幾分
@@ -73,7 +73,16 @@ questionLines = function(){/*--這一行請勿更改--
 [w]a[t]er##水##mp3/water.mp3
 [t]ea##茶##mp3/tea.mp3
 [c]a[k]e##蛋糕##mp3/cake.mp3
-[pi]zza##披薩##mp3/pizza.mp3
-[r]ice##米飯##mp3/rice.mp3
-ice [cr]ea[m]##冰淇淋##mp3/ice cream.mp3
+[piz]za##披薩##mp3/pizza.mp3
+[r]ice##米##mp3/rice.mp3
+ice [c]rea[m]##冰淇淋##mp3/ice cream.mp3
+[d]r[i]n[ks]##飲料##mp3/drinks.mp3
+[f]oo[d]##食物##mp3/food.mp3
+[d]o##助動詞##mp3/do.mp3
+[y]ou##你##mp3/you.mp3
+[w]a[nt]##想要##mp3/want.mp3
+[I]##我##mp3/I.mp3
+[s]o[m]e##一些##mp3/some.mp3
+[d]o[n]'[t]##不##mp3/don't.mp3
+[w]e##我們##mp3/we.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

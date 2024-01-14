@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -70,9 +70,18 @@ seperator = '##';
 questionLines = function(){/*--這一行請勿更改--
 [apples]##蘋果複數##mp3/apples.mp3
 [bananas]##香蕉複數##mp3/bananas.mp3
-[oranges]##柳橙複數##mp3/oranges.mp3
-[hamburgers]##漢堡複數##mp3/hamburgers.mp3
+[oranges]##橘子複數##mp3/oranges.mp3
+[watermelons]##西瓜複數##mp3/watermelons.mp3
 [hot] [dogs]##熱狗複數##mp3/hot dogs.mp3
 [sandwiches]##三明治複數##mp3/sandwiches.mp3
-[watermelons]##西瓜複數##mp3/watermelons.mp3
+[hamburgers]##漢堡複數##mp3/hamburgers.mp3
+[what]##什麼##mp3/what.mp3
+[these]##這些##mp3/these.mp3
+[those]##那些##mp3/those.mp3
+[are]##是_用於第二人稱##mp3/are.mp3
+[they]##他們##mp3/they.mp3
+[do]##助動詞##mp3/do.mp3
+[you]##你##mp3/you.mp3
+[like]##喜歡##mp3/like.mp3
+[don]'[t]##不##mp3/don't.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

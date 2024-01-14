@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -69,17 +69,15 @@ seperator = '##';
 //
 questionLines = function(){/*--這一行請勿更改--
 [sunny]##晴天的##mp3/sunny.mp3
-[windy]##有風的##mp3/windy.mp3
+[windy]##颳風的##mp3/windy.mp3
 [rainy]##下雨的##mp3/rainy.mp3
-[cloudy]##陰天的##mp3/cloudy.mp3
-[hot]##熱的##mp3/hot.mp3
+[cloudy]##多雲的##mp3/cloudy.mp3
 [warm]##溫暖的##mp3/warm.mp3
+[hot]##熱的##mp3/hot.mp3
 [cool]##涼爽的##mp3/cool.mp3
-[cold]##冷的##mp3/cold.mp3
-[dig]##挖##mp3/dig.mp3
-[dot]##點##mp3/dot.mp3
-[tot]##小孩##mp3/tot.mp3
-[tuck]##塞##mp3/tuck.mp3
-[duck]##鴨##mp3/duck.mp3
-[ten]##十##mp3/ten.mp3
+[cold]##寒冷的##mp3/cold.mp3
+[how]##如何##mp3/how.mp3
+[weather]##天氣##mp3/weather.mp3
+[is]##是##mp3/is.mp3
+[it]##它##mp3/it.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

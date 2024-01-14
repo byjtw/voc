@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -68,12 +68,21 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[juice]##果汁_ijecu##mp3/juice.mp3
-[milk]##牛奶_lmki##mp3/milk.mp3
-[water]##水_awert##mp3/water.mp3
-[tea]##茶_tae##mp3/tea.mp3
-[cake]##蛋糕_ceka##mp3/cake.mp3
-[pizza]##披薩_piazz##mp3/pizza.mp3
-[rice]##米飯_ceri##mp3/rice.mp3
-[ice] [cream]##冰淇淋_cei ceram##mp3/ice cream.mp3
+[juice]##果汁jceiu##mp3/juice.mp3
+[milk]##牛奶klmi##mp3/milk.mp3
+[water]##水ratew##mp3/water.mp3
+[tea]##茶eta##mp3/tea.mp3
+[cake]##蛋糕akec##mp3/cake.mp3
+[pizza]##披薩izapz##mp3/pizza.mp3
+[rice]##米eirc##mp3/rice.mp3
+[ice] [cream]##冰淇淋eci crmae##mp3/ice cream.mp3
+[drinks]##飲料idknrs##mp3/drinks.mp3
+[food]##食物fdoo##mp3/food.mp3
+[do]##助動詞od##mp3/do.mp3
+[you]##你yuo##mp3/you.mp3
+[want]##想要nwta##mp3/want.mp3
+[I]##我i##mp3/I.mp3
+[some]##一些moes##mp3/some.mp3
+[don]'[t]##不otnd##mp3/don't.mp3
+[we]##我們ew##mp3/we.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

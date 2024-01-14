@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -42,7 +42,7 @@ tts_enabled = false;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 300;
+timer = 600;
 
 //
 //答對一題加幾分
@@ -68,11 +68,20 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-a[pp]les##蘋果複數##mp3/apples.mp3
-b[a]n[a]n[a]s##香蕉複數##mp3/bananas.mp3
-[o]ran[ge]s##柳橙複數##mp3/oranges.mp3
-ham[bur]g[er]s##漢堡複數##mp3/hamburgers.mp3
-[hot] [dog]s##熱狗複數##mp3/hot dogs.mp3
-sa[nd]wi[ch]es##三明治複數##mp3/sandwiches.mp3
+a[pple]s##蘋果複數##mp3/apples.mp3
+bana[na]s##香蕉複數##mp3/bananas.mp3
+[o]r[a]n[ge]s##橘子複數##mp3/oranges.mp3
 w[a]t[er]me[lon]s##西瓜複數##mp3/watermelons.mp3
+hot d[o]gs##熱狗複數##mp3/hot dogs.mp3
+sandwi[ches]##三明治複數##mp3/sandwiches.mp3
+hamb[ur]g[er]s##漢堡複數##mp3/hamburgers.mp3
+[wha]t##什麼##mp3/what.mp3
+[the]s[e]##這些##mp3/these.mp3
+[tho]s[e]##那些##mp3/those.mp3
+[are]##是_用於第二人稱##mp3/are.mp3
+[they]##他們##mp3/they.mp3
+d[o]##助動詞##mp3/do.mp3
+y[ou]##你##mp3/you.mp3
+l[i]k[e]##喜歡##mp3/like.mp3
+d[o]n't##不##mp3/don't.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

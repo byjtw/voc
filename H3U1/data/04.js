@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 題庫設定檔: 使用自定的 MP3 語音檔
 //=======================================================
 //
@@ -68,18 +68,16 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[sunny]##晴天的_nnusy##mp3/sunny.mp3
-[windy]##有風的_indyw##mp3/windy.mp3
-[rainy]##下雨的_rnyia##mp3/rainy.mp3
-[cloudy]##陰天的_lycodu##mp3/cloudy.mp3
-[hot]##熱的_toh##mp3/hot.mp3
-[warm]##溫暖的_wmra##mp3/warm.mp3
-[cool]##涼爽的_olco##mp3/cool.mp3
-[cold]##冷的_lcod##mp3/cold.mp3
-[dig]##挖_idg##mp3/dig.mp3
-[dot]##點_tod##mp3/dot.mp3
-[tot]##小孩_tto##mp3/tot.mp3
-[tuck]##塞_kutc##mp3/tuck.mp3
-[duck]##鴨_udck##mp3/duck.mp3
-[ten]##十_etn##mp3/ten.mp3
+[sunny]##晴天的snyun##mp3/sunny.mp3
+[windy]##颳風的idywn##mp3/windy.mp3
+[rainy]##下雨的riyna##mp3/rainy.mp3
+[cloudy]##多雲的ludyco##mp3/cloudy.mp3
+[warm]##溫暖的awrm##mp3/warm.mp3
+[hot]##熱的oht##mp3/hot.mp3
+[cool]##涼爽的oloc##mp3/cool.mp3
+[cold]##寒冷的codl##mp3/cold.mp3
+[how]##如何hwo##mp3/how.mp3
+[weather]##天氣tehwrea##mp3/weather.mp3
+[is]##是si##mp3/is.mp3
+[it]##它ti##mp3/it.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);
