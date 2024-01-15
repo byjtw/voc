@@ -40,9 +40,9 @@ datafolder = 'data';
 //
 menuItemLines = function(){/*--這一行請勿更改--
 聽出a_m(限時180秒),01.js
-聽出a_m(限時60秒),02.js
+聽出a_m(限時100秒),02.js
 聽出n_z(限時180秒),03.js
-聽出n_z(限時60秒),04.js
-聽出a_z(限時100秒),05.js
+聽出n_z(限時100秒),04.js
+聽出a_z(限時200秒),05.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
