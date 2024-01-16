@@ -1,4 +1,4 @@
-﻿//=======================================================
+//=======================================================
 // HTML5 Spelling 選單設定檔
 //=======================================================
 //
@@ -19,7 +19,7 @@ CR_LF_First_Pos = CR_LF_test.indexOf('_LF')-'CR_LF'.indexOf('_LF');
 
 //
 //上方標題
-title = 'Festival';
+title = '上學期節慶';
 
 //
 //虛擬鍵盤是否使用數字(使用: true, 不使用: false)
@@ -41,5 +41,6 @@ datafolder = 'data';
 menuItemLines = function(){/*--這一行請勿更改--
 三上_萬聖節(限時180秒),01.js
 四上_中秋節(限時180秒),02.js
+五上_聖誕節(限時180秒),02.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
