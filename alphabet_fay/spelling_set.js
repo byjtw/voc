@@ -19,7 +19,7 @@ CR_LF_First_Pos = CR_LF_test.indexOf('_LF')-'CR_LF'.indexOf('_LF');
 
 //
 //上方標題
-title = '字母首音';
+title = '字母名辨識聽選';
 
 //
 //虛擬鍵盤是否使用數字(使用: true, 不使用: false)
@@ -27,7 +27,7 @@ number_enabled = false;
 
 //
 //上載成績單記錄的網址
-logger_url = 'https://docs.google.com/forms/d/e/1FAIpQLSfJuSsTT_Emi1zaN63SVZqJiygf5Rxf9Lgw0AF5MQgaDDSncA/viewform';
+logger_url = 'https://docs.google.com/forms/d/e/1FAIpQLSd1qCC_m-cI0B3wVtQWa02c7s6sywlwa6SPl5LkAO2etOmiTQ/viewform';
 
 //
 //存放題庫檔的資料夾名稱(相對於目前的資料夾
@@ -39,12 +39,11 @@ datafolder = 'data';
 //  以半形逗號為【選項文字】與【題庫檔名】兩欄的分欄符號
 //
 menuItemLines = function(){/*--這一行請勿更改--
-聽出abcde,01.js
-聽出fghij,02.js
-聽出klmno,03.js
-聽出pqrst,04.js
-聽出uvwxyz,05.js
-聽出a_z,06.js
 
+聽選大寫字母,01.js
+聽選小寫字母,02.js
+聽選大小寫字母A-M(有提示),03.js
+聽選大小寫字母N-Z(有提示),04.js
+聽選大小寫字母A-Z(無提示),05.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
