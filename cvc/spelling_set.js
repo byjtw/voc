@@ -27,7 +27,7 @@ number_enabled = false;
 
 //
 //上載成績單記錄的網址
-logger_url = '';
+logger_url = 'https://docs.google.com/forms/d/e/1FAIpQLSe5--0hhy2hMvyrAgvGh5AXxDxqo6MVlw9RHImxMqy1X4Yr3g/viewform';
 
 //
 //存放題庫檔的資料夾名稱(相對於目前的資料夾
