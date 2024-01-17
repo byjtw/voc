@@ -19,7 +19,7 @@ CR_LF_First_Pos = CR_LF_test.indexOf('_LF')-'CR_LF'.indexOf('_LF');
 
 //
 //上方標題
-title = 'CVC單字聽選';
+title = '字母名辨識聽選';
 
 //
 //虛擬鍵盤是否使用數字(使用: true, 不使用: false)
@@ -27,7 +27,7 @@ number_enabled = false;
 
 //
 //上載成績單記錄的網址
-logger_url = '';
+logger_url = 'docs.google.com/spreadsheets/d/1-gQ6JiN_9qk_zNVQNtW5cNAA_ZwjA_97kovguNl4-xg/edit?usp=sharing';
 
 //
 //存放題庫檔的資料夾名稱(相對於目前的資料夾
