@@ -47,5 +47,7 @@ menuItemLines = function(){/*--這一行請勿更改--
 聽選大小寫字母A-M(有提示),05.js
 聽選大小寫字母N-Z(有提示),06.js
 聽選大小寫字母A-Z(無提示),07.js
+聽選小寫a-m字母(60),03.js
+聽選小寫n-z字母(60),04.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
