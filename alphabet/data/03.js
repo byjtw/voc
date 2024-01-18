@@ -68,17 +68,17 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[Aa]##提示Aa##mp3/A.mp3
-[Bb]##提示Bb##mp3/B.mp3
-[Cc]##提示Cc##mp3/C.mp3
-[Dd]##提示Dd##mp3/D.mp3
-[Ee]##提示Ee##mp3/E.mp3
-[Ff]##提示Ff##mp3/F.mp3
-[Gg]##提示Gg##mp3/G.mp3
-[Hh]##提示Hh##mp3/H.mp3
-[Ii]##提示Ii##mp3/I.mp3
-[Jj]##提示Jj##mp3/J.mp3
-[Kk]##提示Kk##mp3/K.mp3
-[Ll]##提示Ll##mp3/L.mp3
-[Mm]##提示Mm##mp3/M.mp3
+[a]##選出小寫字母##mp3/A.mp3
+[b]##選出小寫字母##mp3/B.mp3
+[c]##選出小寫字母##mp3/C.mp3
+[d]##選出小寫字母##mp3/D.mp3
+[e]##選出小寫字母##mp3/E.mp3
+[f]##選出小寫字母##mp3/F.mp3
+[g]##選出小寫字母##mp3/G.mp3
+[h]##選出小寫字母##mp3/H.mp3
+[i]##選出小寫字母##mp3/I.mp3
+[j]##選出小寫字母##mp3/J.mp3
+[k]##選出小寫字母##mp3/K.mp3
+[l]##選出小寫字母##mp3/L.mp3
+[m]##選出小寫字母##mp3/M.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

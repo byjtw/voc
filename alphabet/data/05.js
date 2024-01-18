@@ -42,7 +42,7 @@ tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 600;
+timer = 300;
 
 //
 //答對一題加幾分
@@ -68,30 +68,17 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[Aa]##點選大小寫字母##mp3/A.mp3
-[Bb]##點選大小寫字母##mp3/B.mp3
-[Cc]##點選大小寫字母##mp3/C.mp3
-[Dd]##點選大小寫字母##mp3/D.mp3
-[Ee]##點選大小寫字母##mp3/E.mp3
-[Ff]##點選大小寫字母##mp3/F.mp3
-[Gg]##點選大小寫字母##mp3/G.mp3
-[Hh]##點選大小寫字母##mp3/H.mp3
-[Ii]##點選大小寫字母##mp3/I.mp3
-[Jj]##點選大小寫字母##mp3/J.mp3
-[Kk]##點選大小寫字母##mp3/K.mp3
-[Ll]##點選大小寫字母##mp3/L.mp3
-[Mm]##點選大小寫字母##mp3/M.mp3
-[Nn]##點選大小寫字母##mp3/N.mp3
-[Oo]##點選大小寫字母##mp3/O.mp3
-[Pp]##點選大小寫字母##mp3/P.mp3
-[Qq]##點選大小寫字母##mp3/Q.mp3
-[Rr]##點選大小寫字母##mp3/R.mp3
-[Ss]##點選大小寫字母##mp3/S.mp3
-[Tt]##點選大小寫字母##mp3/T.mp3
-[Uu]##點選大小寫字母##mp3/U.mp3
-[Vv]##點選大小寫字母##mp3/V.mp3
-[Ww]##點選大小寫字母##mp3/W.mp3
-[Xx]##點選大小寫字母##mp3/X.mp3
-[Yy]##點選大小寫字母##mp3/Y.mp3
-[Zz]##點選大小寫字母##mp3/Z.mp3
+[Aa]##提示Aa##mp3/A.mp3
+[Bb]##提示Bb##mp3/B.mp3
+[Cc]##提示Cc##mp3/C.mp3
+[Dd]##提示Dd##mp3/D.mp3
+[Ee]##提示Ee##mp3/E.mp3
+[Ff]##提示Ff##mp3/F.mp3
+[Gg]##提示Gg##mp3/G.mp3
+[Hh]##提示Hh##mp3/H.mp3
+[Ii]##提示Ii##mp3/I.mp3
+[Jj]##提示Jj##mp3/J.mp3
+[Kk]##提示Kk##mp3/K.mp3
+[Ll]##提示Ll##mp3/L.mp3
+[Mm]##提示Mm##mp3/M.mp3
 -----*/}.toString().replace(/\r/g,"").slice("function(){/*--這一行請勿更改--".length+1,-9);

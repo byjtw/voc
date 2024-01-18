@@ -40,10 +40,12 @@ datafolder = 'data';
 //
 menuItemLines = function(){/*--這一行請勿更改--
 
-聽選大寫字母,01.js
-聽選小寫字母,02.js
-聽選大小寫字母A-M(有提示),03.js
-聽選大小寫字母N-Z(有提示),04.js
-聽選大小寫字母A-Z(無提示),05.js
+聽選大寫A-M字母,01.js
+聽選大寫N-Z字母,02.js
+聽選小寫a-m字母,03.js
+聽選小寫n-z字母,04.js
+聽選大小寫字母A-M(有提示),05.js
+聽選大小寫字母N-Z(有提示),06.js
+聽選大小寫字母A-Z(無提示),07.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
