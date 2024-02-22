@@ -80,18 +80,19 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[tiger]##老虎gtrei##mp3/tiger.mp3
-[lion]##獅子loni##mp3/lion.mp3
-[elephant]##大象leatpehn##mp3/elephant.mp3
-[koala]##無尾熊aakol##mp3/koala.mp3
-[horse]##馬sreho##mp3/horse.mp3
-[zebra]##斑馬aberz##mp3/zebra.mp3
-[turtle]##龜ettrul##mp3/turtle.mp3
-[monkey]##猴nykmeo##mp3/monkey.mp3
-[animal]##動物ilaanm##mp3/animal.mp3
-[how many]##多少ohw yman##mp3/how many.mp3
-[there]##那裡hetre##mp3/there.mp3
-[are]##是era##mp3/are.mp3
-[is]##是si##mp3/is.mp4
+[eyes]##眼睛複數esye##mp3/eyes.mp3
+[ears]##耳朵複數saer##mp3/ears.mp3
+[nose]##鼻子enos##mp3/nose.mp3
+[mouth]##嘴oumth##mp3/mouth.mp3
+[hands]##手複數ansdh##mp3/hands.mp3
+[arms]##手臂複數rmas##mp3/arms.mp3
+[legs]##腿複數lsge##mp3/legs.mp3
+[foot]##足foto##mp3/foot.mp3
+[feet]##足複數efet##mp3/feet.mp3
+[eye]##眼睛yee##mp3/eye.mp3
+[ear]##耳朵rea##mp3/ear.mp3
+[hand]##手adnh##mp3/hand.mp3
+[arm]##手臂ram##mp3/arm.mp3
+[leg]##腿lge##mp3/leg.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
