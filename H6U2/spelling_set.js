@@ -42,7 +42,6 @@ menuItemLines = function(){/*--這一行請勿更改--
 單字高手:H6U2單字抄寫,03.js
 單字高手:H6U2單字依發音規則,01.js
 單字高手:H6U2單字需記憶,02.js
-單字高手:H6U2單字抄寫,03.js
 單字高手:H6U2單字亂碼,04.js
 單字高手:H6U2單字挑戰,05.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
