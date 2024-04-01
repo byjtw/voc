@@ -80,18 +80,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-t[i]g[er]##老虎##mp3/tiger.mp3
-l[io]n##獅子##mp3/lion.mp3
-el[epha]nt##大象##mp3/elephant.mp3
-k[oa]l[a]##無尾熊##mp3/koala.mp3
-hor[se]##馬##mp3/horse.mp3
-z[e]br[a]##斑馬##mp3/zebra.mp3
-tur[tle]##龜##mp3/turtle.mp3
-m[o]nk[ey]##猴##mp3/monkey.mp3
-an[i]m[al]##動物##mp3/animal.mp3
-[how] [many]##多少##mp3/how many.mp3
-[th]e[re]##那裡##mp3/there.mp3
-[are]##是##mp3/are.mp3
-[is]##是##mp3/is.mp4
+h[ea]d[ache]##頭痛##mp3/headache.mp3
+st[omachache]##腹痛##mp3/stomachache.mp3
+s[o]r[e] thr[oa]t##喉嚨痛##mp3/sore throat.mp3
+run[ny] nose##流鼻水##mp3/runny nose.mp3
+f[e]ver##發燒##mp3/fever.mp3
+c[old]##感冒##mp3/cold.mp3
+t[oo]th[ache]##牙痛##mp3/toothache.mp3
+h[a]v[e]##有＿原形動詞##mp3/have.mp3
+ha[s]##有＿用於的第三人稱單數##mp3/has.mp3
+[do]##助動詞＿非用於第三人稱單數##mp3/do.mp3
+[does]##助動詞＿用於第三人稱單數##mp3/does.mp3
+[don]'[t]##助動詞否定##mp3/dont.mp3
+[doesn]'[t]##助動詞否定##mp3/doesnt.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

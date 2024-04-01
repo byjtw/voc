@@ -80,18 +80,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[tiger]##老虎##mp3/tiger.mp3
-[lion]##獅子##mp3/lion.mp3
-[elephant]##大象##mp3/elephant.mp3
-[koala]##無尾熊##mp3/koala.mp3
-[horse]##馬##mp3/horse.mp3
-[zebra]##斑馬##mp3/zebra.mp3
-[turtle]##龜##mp3/turtle.mp3
-[monkey]##猴##mp3/monkey.mp3
-[animal]##動物##mp3/animal.mp3
-[how many]##多少##mp3/how many.mp3
-[there]##那裡##mp3/there.mp3
-[are]##是##mp3/are.mp3
-[is]##是##mp3/is.mp4
+[headache]##頭痛##mp3/headache.mp3
+[stomachache]##腹痛##mp3/stomachache.mp3
+[sore] [throat]##喉嚨痛##mp3/sore throat.mp3
+[runny] [nose]##流鼻水##mp3/runny nose.mp3
+[fever]##發燒##mp3/fever.mp3
+[cold]##感冒##mp3/cold.mp3
+[toothache]##牙痛##mp3/toothache.mp3
+[have]##有＿原形動詞##mp3/have.mp3
+[has]##有＿用於的第三人稱單數##mp3/has.mp3
+[do]##助動詞＿非用於第三人稱單數##mp3/do.mp3
+[does]##助動詞＿用於第三人稱單數##mp3/does.mp3
+[don]'[t]##助動詞否定##mp3/dont.mp3
+[doesn]'[t]##助動詞否定##mp3/doesnt.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
