@@ -43,6 +43,6 @@ menuItemLines = function(){/*--這一行請勿更改--
 三下U2單字發音規則的空格,01.js
 三下U2單字要記憶的空格,02.js
 三下U2單字亂碼,04.js
-三下U2單字挑戰,04.js
+三下U2單字挑戰,05.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
