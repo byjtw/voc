@@ -57,7 +57,7 @@ tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 240;
+timer = 300;
 
 //
 //答對一題加幾分
@@ -80,18 +80,19 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[t]i[g]er##老虎##mp3/tiger.mp3
-[big]##大的##mp3/big.mp3
-[d]o[g]##狗##mp3/dog.mp3
-[cat]##貓##mp3/cat.mp3
-[b]ir[d]##鳥##mp3/bird.mp3
-[fi]sh##魚##mp3/fish.mp3
-[n]o##不##mp3/no.mp3
-[not]##不是##mp3/not.mp3
-[yes]##是的##mp3/yes.mp3
-[is]##是##mp3/is.mp3
-th[is]##這##mp3/this.mp3
-th[at]##那##mp3/that.mp3
-th[at]##那##mp3/that.mp4
+[br]ea[kf]a[st]##早餐##mp3/breakfast.mp3
+[lun]ch##午餐##mp3/lunch.mp3
+[di]nner##晚餐##mp3/dinner.mp3
+[br]ea[d]##麵包##mp3/bread.mp3
+ch[i]cke[n]##雞##mp3/chicken.mp3
+[sal]a[d]##沙拉##mp3/salad.mp3
+[s]ou[p]##湯##mp3/soup.mp3
+[n]oo[d]les##麵條##mp3/noodles.mp3
+[w]ou[ld] [like]##想要##mp3/would like.mp3
+[brun]ch##早午餐##mp3/brunch.mp3
+[s]o[m]e##一些##mp3/some.mp3
+[pl]ea[s]e##請##mp3/please.mp3
+[f]or##為了##mp3/for.mp3
+[sna]ck##點心##mp3/snack.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

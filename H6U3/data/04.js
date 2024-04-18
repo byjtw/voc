@@ -80,18 +80,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[tiger]##老虎gtrei##mp3/tiger.mp3
-[lion]##獅子loni##mp3/lion.mp3
-[elephant]##大象leatpehn##mp3/elephant.mp3
-[koala]##無尾熊aakol##mp3/koala.mp3
-[horse]##馬sreho##mp3/horse.mp3
-[zebra]##斑馬aberz##mp3/zebra.mp3
-[turtle]##龜ettrul##mp3/turtle.mp3
-[monkey]##猴nykmeo##mp3/monkey.mp3
-[animal]##動物ilaanm##mp3/animal.mp3
-[how many]##多少ohw yman##mp3/how many.mp3
-[there]##那裡hetre##mp3/there.mp3
-[are]##是era##mp3/are.mp3
-[is]##是si##mp3/is.mp4
+[breakfast]##早餐stfeabrka##mp3/breakfast.mp3
+[lunch]##午餐hcnlu##mp3/lunch.mp3
+[dinner]##晚餐endrin##mp3/dinner.mp3
+[bread]##麵包aebdr##mp3/bread.mp3
+[chicken]##雞cnhciek##mp3/chicken.mp3
+[salad]##沙拉laads##mp3/salad.mp3
+[soup]##湯puos##mp3/soup.mp3
+[noodles]##麵條oeosndl##mp3/noodles.mp3
+[brunch]##早午餐bhrcnu##mp3/brunch.mp3
+[some]##一些msoe##mp3/some.mp3
+[please]##請eslepa##mp3/please.mp3
+[for]##為了orf##mp3/for.mp3
+[snack]##點心nasck##mp3/snack.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
