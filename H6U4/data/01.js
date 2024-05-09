@@ -57,7 +57,7 @@ tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 240;
+timer = 300;
 
 //
 //答對一題加幾分
@@ -80,18 +80,24 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[t]i[g]er##老虎##mp3/tiger.mp3
-[big]##大的##mp3/big.mp3
-[d]o[g]##狗##mp3/dog.mp3
-[cat]##貓##mp3/cat.mp3
-[b]ir[d]##鳥##mp3/bird.mp3
-[fi]sh##魚##mp3/fish.mp3
-[n]o##不##mp3/no.mp3
-[not]##不是##mp3/not.mp3
-[yes]##是的##mp3/yes.mp3
-[is]##是##mp3/is.mp3
-th[is]##這##mp3/this.mp3
-th[at]##那##mp3/that.mp3
-th[at]##那##mp3/that.mp4
+[ba]ck[pa]ck##背包##mp3/backpack.mp3
+[cap]##帽子##mp3/cap.mp3
+[lun]ch[box]##便當##mp3/lunchbox.mp3
+[umbre]lla##傘##mp3/umbrella.mp3
+[w]a[t]er [bo]ttle##水瓶##mp3/water bottle.mp3
+[w]or[kb]oo[k]##作業簿##mp3/workbook.mp3
+[gla]sses##眼鏡##mp3/glasses.mp3
+[sh]oes##鞋##mp3/shoes.mp3
+[wh]ose##誰的##mp3/whose.mp3
+[th]is##這##mp3/this.mp3
+[th]at##那##mp3/that.mp3
+[th]ese##這些##mp3/these.mp3
+[th]ose##那些##mp3/those.mp3
+[m]y##我的##mp3/my.mp3
+[y]ou[r]##你的##mp3/your.mp3
+[his]##他的##mp3/his.mp3
+[h]er##她##mp3/her.mp3
+ou[r]##我們的##mp3/our.mp3
+[th]eir##他們的##mp3/their.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
