@@ -57,7 +57,7 @@ tts_cut_last_seconds = 0; //裁掉最後面的聲音長度(秒為單位)
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 1000;
+timer = 600;
 
 //
 //答對一題加幾分
@@ -89,18 +89,9 @@ questionLines = function(){/*--這一行請勿更改--
 [table]##桌子 bleat##mp3/table.mp3
 [under]##在...之下 ndreu##mp3/under.mp3
 [on]##在...之上 no##mp3/on.mp3
-[next] [to]##在...旁邊 texn ot##mp3/next_to.mp3
+[by]##在...旁邊 yb##mp3/by.mp3
 [where]##哪裏 ewher##mp3/where.mp3
 [my]##我的 ym##mp3/my.mp3
 [in]##在...裡面 ni##mp3/in.mp3
-[is]##是（用在he/she/it) si##mp3/is.mp3
-[are]##是（用在複數,you) ear##mp3/are.mp3
-[it]##它,牠 ti##mp3/it.mp3
-[cut]##剪，切 tcu##mp3/cut.mp3
-[cute]##可愛的 euct##mp3/cute.mp3
-[tub]##浴缸 ubt##mp3/tub.mp3
-[tube]##試管 ebut##mp3/tube.mp3
-[cube]##立方體 ebuc##mp3/cube.mp3
-[duke]##公爵 kued##mp3/duke.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

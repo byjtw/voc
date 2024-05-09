@@ -57,7 +57,7 @@ tts_enabled = true;
 //---------------------------------------------------
 //
 //計時幾秒
-timer = 500;
+timer = 600;
 
 //
 //答對一題加幾分
@@ -89,18 +89,9 @@ k[i]t[e]##風箏##mp3/kite.mp3
 ta[ble]##桌子##mp3/table.mp3
 u[n]d[er]##在...之下##mp3/under.mp3
 [o]n##在...之上##mp3/on.mp3
-n[ex]t t[o]##在...旁邊##mp3/next_to.mp3
+b[y]##在...旁邊##mp3/by.mp3
 [wh]er[e]##哪裏##mp3/where.mp3
 [my]##我的##mp3/my.mp3
 [in]##在...裡面##mp3/in.mp3
-[is]##是（用在he/she/it)##mp3/is.mp3
-[are]##是（用在複數,you)##mp3/are.mp3
-[it]##它,牠##mp3/it.mp3
-c[u]t##剪，切##mp3/cut.mp3
-c[u]t[e]##可愛的##mp3/cute.mp3
-t[u]b##浴缸##mp3/tub.mp3
-t[u]b[e]##試管##mp3/tube.mp3
-c[u]b[e]##立方體##mp3/cube.mp3
-d[u]k[e]##公爵##mp3/duke.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

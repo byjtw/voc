@@ -39,10 +39,10 @@ datafolder = 'data';
 //  以半形逗號為【選項文字】與【題庫檔名】兩欄的分欄符號
 //
 menuItemLines = function(){/*--這一行請勿更改--
-單字高手:D4U4單字(依發音規則)(限時600秒),01.js
-單字高手:D4U4單字(要記憶)(限時600秒),02.js
-單字高手:D4U4單字抄寫(限時1000秒),03.js
-單字高手:D4U4單字挑戰(有提示）(限時1000秒),04.js
-單字高手:D4U4單字挑戰(無提示）(限時1000秒),05.js
+D4U4單字抄寫,03.js
+D4U4單字依發音規則,01.js
+D4U4單字要記憶,02.js
+D4U4單字亂碼,04.js
+D4U4單字挑戰,05.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
