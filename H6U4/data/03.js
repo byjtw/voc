@@ -84,7 +84,7 @@ questionLines = function(){/*--這一行請勿更改--
 [cap]##帽子cap##mp3/cap.mp3
 [lunchbox]##便當lunchbox##mp3/lunchbox.mp3
 [umbrella]##傘umbrella##mp3/umbrella.mp3
-[water bottle]##水瓶water bottle##mp3/water bottle.mp3
+[water] [bottle]##水瓶water bottle##mp3/water bottle.mp3
 [workbook]##作業簿workbook##mp3/workbook.mp3
 [glasses]##眼鏡glasses##mp3/glasses.mp3
 [shoes]##鞋shoes##mp3/shoes.mp3
