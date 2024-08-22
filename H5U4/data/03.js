@@ -92,6 +92,6 @@ questionLines = function(){/*--這一行請勿更改--
 [how many]##多少how many##mp3/how many.mp3
 [there]##那裡there##mp3/there.mp3
 [are]##是are##mp3/are.mp3
-[is]##是is##mp3/is.mp4
+[is]##是is##mp3/is.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

@@ -80,18 +80,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[tiger]##老虎tiger##mp3/tiger.mp3
-[lion]##獅子lion##mp3/lion.mp3
-[elephant]##大象elephant##mp3/elephant.mp3
-[koala]##無尾熊koala##mp3/koala.mp3
-[horse]##馬horse##mp3/horse.mp3
-[zebra]##斑馬zebra##mp3/zebra.mp3
-[turtle]##龜turtle##mp3/turtle.mp3
-[monkey]##猴monkey##mp3/monkey.mp3
-[animal]##動物animal##mp3/animal.mp3
-[how many]##多少how many##mp3/how many.mp3
-[there]##那裡there##mp3/there.mp3
-[are]##是are##mp3/are.mp3
-[is]##是is##mp3/is.mp4
+[art]##藝術art##mp3/art.mp3
+[Chinese]##國語Chinese##mp3/Chinese.mp3
+[English]##英語English##mp3/English.mp3
+[math]##數學math##mp3/math.mp3
+[music]##音樂music##mp3/music.mp3
+[PE]##體育課PE##mp3/PE.mp3
+[science]##自然science##mp3/science.mp3
+[social] [studies]##社會課social studies##mp3/social studies.mp3
+[do]##助動詞_非第三人稱do##mp3/do.mp3
+[does]##助動詞_第三人稱does##mp3/does.mp3
+[have]##有_非第三人稱have##mp3/have.mp3
+[has]##有_第三人稱has##mp3/has.mp3
+[class]##課class##mp3/class.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

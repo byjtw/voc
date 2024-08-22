@@ -80,18 +80,17 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[t]i[g]er##老虎##mp3/tiger.mp3
-[big]##大的##mp3/big.mp3
-[d]o[g]##狗##mp3/dog.mp3
-[cat]##貓##mp3/cat.mp3
-[b]ir[d]##鳥##mp3/bird.mp3
-[fi]sh##魚##mp3/fish.mp3
-[n]o##不##mp3/no.mp3
-[not]##不是##mp3/not.mp3
-[yes]##是的##mp3/yes.mp3
-[is]##是##mp3/is.mp3
-th[is]##這##mp3/this.mp3
-th[at]##那##mp3/that.mp3
-th[at]##那##mp3/that.mp4
+[ba]nk##銀行##mp3/bank.mp3
+[b]oo[ks]tore##書店##mp3/bookstore.mp3
+[hospit]a[l]##醫院##mp3/hospital.mp3
+[l]i[br]a[r]y##圖書館##mp3/library.mp3
+[m]useu[m]##博物館##mp3/museum.mp3
+[p]ar[k]##公園##mp3/park.mp3
+[p]o[st] o[ffi]ce##郵局##mp3/post office.mp3
+[s]u[p]er[m]ar[k]e[t]##超級市場##mp3/supermarket.mp3
+wh[er]e##在哪裡##mp3/where.mp3
+[g]o[i]ng##正要去##mp3/going.mp3
+o[n]##在##mp3/on.mp3
+[s]t[r]ee[t]##街道##mp3/street.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

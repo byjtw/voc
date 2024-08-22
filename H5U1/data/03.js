@@ -80,18 +80,15 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[tiger]##老虎tiger##mp3/tiger.mp3
-[lion]##獅子lion##mp3/lion.mp3
-[elephant]##大象elephant##mp3/elephant.mp3
-[koala]##無尾熊koala##mp3/koala.mp3
-[horse]##馬horse##mp3/horse.mp3
-[zebra]##斑馬zebra##mp3/zebra.mp3
-[turtle]##龜turtle##mp3/turtle.mp3
-[monkey]##猴monkey##mp3/monkey.mp3
-[animal]##動物animal##mp3/animal.mp3
-[how many]##多少how many##mp3/how many.mp3
-[there]##那裡there##mp3/there.mp3
-[are]##是are##mp3/are.mp3
-[is]##是is##mp3/is.mp4
+[Sunday]##星期日Sunday##mp3/Sunday.mp3
+[Monday]##週一Monday##mp3/Monday.mp3
+[Tuesday]##週二Tuesday##mp3/Tuesday.mp3
+[Wednesday]##週三Wednesday##mp3/Wednesday.mp3
+[Thursday]##週四Thursday##mp3/Thursday.mp3
+[Friday]##星期五Friday##mp3/Friday.mp3
+[Saturday]##週六Saturday##mp3/Saturday.mp3
+[what]##什麼what##mp3/what.mp3
+[day]##天day##mp3/day.mp3
+[today]##今天today##mp3/today.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

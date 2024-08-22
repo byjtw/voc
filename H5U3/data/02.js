@@ -65,7 +65,7 @@ number_of_points_for_one_question = 10;
 
 //
 //每題要拿掉幾個字母當填空
-blanks_total_number = 10;
+blanks_total_number = 1;
 
 //
 //欄位分隔符號為兩個井字號(##)
@@ -80,18 +80,17 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-t[i]g[er]##老虎##mp3/tiger.mp3
-l[io]n##獅子##mp3/lion.mp3
-el[epha]nt##大象##mp3/elephant.mp3
-k[oa]l[a]##無尾熊##mp3/koala.mp3
-hor[se]##馬##mp3/horse.mp3
-z[e]br[a]##斑馬##mp3/zebra.mp3
-tur[tle]##龜##mp3/turtle.mp3
-m[o]nk[ey]##猴##mp3/monkey.mp3
-an[i]m[al]##動物##mp3/animal.mp3
-[how] [many]##多少##mp3/how many.mp3
-[th]e[re]##那裡##mp3/there.mp3
-[are]##是##mp3/are.mp3
-[is]##是##mp3/is.mp4
+ba[nk]##銀行##mp3/bank.mp3
+b[oo]ks[tore]##書店##mp3/bookstore.mp3
+hospi[tal]##醫院##mp3/hospital.mp3
+l[i]br[ary]##圖書館##mp3/library.mp3
+m[useu]m##博物館##mp3/museum.mp3
+p[ar]k##公園##mp3/park.mp3
+p[o]st [o]ffi[ce]##郵局##mp3/post office.mp3
+s[u]p[er]m[ar]k[e]t##超級市場##mp3/supermarket.mp3
+[wh]er[e]##在哪裡##mp3/where.mp3
+g[o]i[ng]##正要去##mp3/going.mp3
+[on]##在##mp3/on.mp3
+[st]r[ee]t##街道##mp3/street.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

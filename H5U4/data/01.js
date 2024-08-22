@@ -81,17 +81,17 @@ seperator = '##';
 //
 questionLines = function(){/*--這一行請勿更改--
 [t]i[g]er##老虎##mp3/tiger.mp3
-[big]##大的##mp3/big.mp3
-[d]o[g]##狗##mp3/dog.mp3
-[cat]##貓##mp3/cat.mp3
-[b]ir[d]##鳥##mp3/bird.mp3
-[fi]sh##魚##mp3/fish.mp3
-[n]o##不##mp3/no.mp3
-[not]##不是##mp3/not.mp3
-[yes]##是的##mp3/yes.mp3
+[l]io[n]##獅子##mp3/lion.mp3
+[el]epha[nt]##大象##mp3/elephant.mp3
+[k]oa[l]a##無尾熊##mp3/koala.mp3
+[hors]e##馬##mp3/horse.mp3
+[z]e[br]a##斑馬##mp3/zebra.mp3
+[turt]le##龜##mp3/turtle.mp3
+[m]o[nk]ey##猴##mp3/monkey.mp3
+[an]i[m]a[l]##動物##mp3/animal.mp3
+[how] [man]y##多少##mp3/how many.mp3
+th[er]e##那裡##mp3/there.mp3
+a[r]e##是##mp3/are.mp3
 [is]##是##mp3/is.mp3
-th[is]##這##mp3/this.mp3
-th[at]##那##mp3/that.mp3
-th[at]##那##mp3/that.mp4
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
