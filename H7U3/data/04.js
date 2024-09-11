@@ -80,16 +80,16 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[Australia]##澳洲aiArluast##mp3/Australia.mp3
-[Japan]##日本aanpJ##mp3/Japan.mp3
-[Taiwan]##台灣wianTa##mp3/Taiwan.mp3
-[the] [UK]##英國eht KU##mp3/the UK.mp3
-[the] [USA]##美國eht SAU##mp3/the USA.mp3
-[Spain]##西班牙pinaS##mp3/Spain.mp3
-[Singapore]##新加坡eSraigpno##mp3/Singapore.mp3
-[India]##印度dniaI##mp3/India.mp3
-[where]##哪裡whree##mp3/where.mp3
-[from]##從rmfo##mp3/from.mp3
-[country]##國家yorncut##mp3/country.mp3
+[go] [jogging]##去慢跑og gjoigng##mp3/go jogging.mp3
+[listen] [to] [music]##聽音樂setlni to umsci##mp3/listen to music.mp3
+[surf] [the] [Internet]##上網rufs eht etinrnet##mp3/surf the Internet.mp3
+[play] [baseball]##打棒球apyl beabslal##mp3/play baseball.mp3
+[play] [basketball]##打籃球pyal aeltkblbas##mp3/play basketball.mp3
+[ride] [a] [bike]##騎自行車deri a bike##mp3/ride a bike.mp3
+[study] [English]##學習英語tudsy igshlne##mp3/study English.mp3
+[watch] [TV]##看電視cthwa vt##mp3/watch TV.mp3
+[on] [weekends]##在週末on edweenks##mp3/on weekends.mp3
+[in] [his] [free] [time]##在他的空閒時間ni sih eref mtie##mp3/in his free time.mp3
+[in] [her] [free] [time]##在她的空閒時間in ehr free itme##mp3/in her free time.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
