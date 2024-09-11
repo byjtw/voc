@@ -80,16 +80,17 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[Australia]##澳洲aiArluast##mp3/Australia.mp3
-[Japan]##日本aanpJ##mp3/Japan.mp3
-[Taiwan]##台灣wianTa##mp3/Taiwan.mp3
-[the] [UK]##英國eht KU##mp3/the UK.mp3
-[the] [USA]##美國eht SAU##mp3/the USA.mp3
-[Spain]##西班牙pinaS##mp3/Spain.mp3
-[Singapore]##新加坡eSraigpno##mp3/Singapore.mp3
-[India]##印度dniaI##mp3/India.mp3
-[where]##哪裡whree##mp3/where.mp3
-[from]##從rmfo##mp3/from.mp3
-[country]##國家yorncut##mp3/country.mp3
+[by] [bike]##騎自行車yb bkei##mp3/by bike.mp3
+[by] [car]##搭乘汽車yb rac##mp3/by car.mp3
+[by] [taxi]##搭乘計程車yb iaxt##mp3/by taxi.mp3
+[by] [bus]##搭乘巴士yb bsu##mp3/by bus.mp3
+[on] [foot]##走路no foto##mp3/on foot.mp3
+[by] [scooter]##搭乘摩托車yb toorces##mp3/by scooter.mp3
+[by] [train]##搭火車yb tniar##mp3/by train.mp3
+[by] [MRT]##搭乘捷運yb MTR##mp3/by MRT.mp3
+[by] [metro]##搭乘地鐵yb eromt##mp3/by metro.mp3
+[how]##如何hwo##mp3/how.mp3
+[go] [to] [school]##上學og ot ohoscl##mp3/go to school.mp3
+[go] [home]##回家og ehmo##mp3/go home.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

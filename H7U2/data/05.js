@@ -80,16 +80,17 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[Australia]##澳洲##mp3/Australia.mp3
-[Japan]##日本##mp3/Japan.mp3
-[Taiwan]##台灣##mp3/Taiwan.mp3
-[the] [UK]##英國##mp3/the UK.mp3
-[the] [USA]##美國##mp3/the USA.mp3
-[Spain]##西班牙##mp3/Spain.mp3
-[Singapore]##新加坡##mp3/Singapore.mp3
-[India]##印度##mp3/India.mp3
-[where]##哪裡##mp3/where.mp3
-[from]##從##mp3/from.mp3
-[country]##國家##mp3/country.mp3
+[by] [bike]##騎自行車##mp3/by bike.mp3
+[by] [car]##搭乘汽車##mp3/by car.mp3
+[by] [taxi]##搭乘計程車##mp3/by taxi.mp3
+[by] [bus]##搭乘巴士##mp3/by bus.mp3
+[on] [foot]##走路##mp3/on foot.mp3
+[by] [scooter]##搭乘摩托車##mp3/by scooter.mp3
+[by] [train]##搭火車##mp3/by train.mp3
+[by] [MRT]##搭乘捷運##mp3/by MRT.mp3
+[by] [metro]##搭乘地鐵##mp3/by metro.mp3
+[how]##如何##mp3/how.mp3
+[go] [to] [school]##上學##mp3/go to school.mp3
+[go] [home]##回家##mp3/go home.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
