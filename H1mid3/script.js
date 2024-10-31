@@ -25,6 +25,9 @@ function loadSentence() {
         wordElement.addEventListener("dragstart", dragStart);
         wordElement.addEventListener("drop", drop);
         wordElement.addEventListener("dragover", dragOver);
+        wordElement.addEventListener("touchstart", dragStart);    // Touch event handlers
+        wordElement.addEventListener("touchmove", dragMove);
+        wordElement.addEventListener("touchend", drop);
         wordContainer.appendChild(wordElement);
     });
 
@@ -52,11 +55,34 @@ function shuffleArray(array) {
 let draggedElement;
 
 function dragStart(event) {
-    draggedElement = event.target;
+    if (event.type === "touchstart") {
+        draggedElement = event.target;
+    } else {
+        draggedElement = event.target;
+    }
+}
+
+function dragMove(event) {
+    // Prevent default to avoid scrolling on touch devices
+    event.preventDefault();
+    const touch = event.touches[0];
+    draggedElement.style.position = 'absolute';
+    draggedElement.style.left = `${touch.pageX - draggedElement.offsetWidth / 2}px`;
+    draggedElement.style.top = `${touch.pageY - draggedElement.offsetHeight / 2}px`;
 }
 
 function drop(event) {
-    if (event.target.className === "word") {
+    if (event.type === "touchend") {
+        const touch = event.changedTouches[0];
+        const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (dropTarget && dropTarget.className === "word") {
+            const tempText = dropTarget.textContent;
+            dropTarget.textContent = draggedElement.textContent;
+            draggedElement.textContent = tempText;
+        }
+        draggedElement.style.position = 'static';  // Reset position
+        draggedElement = null;
+    } else if (event.target.className === "word") {
         const tempText = event.target.textContent;
         event.target.textContent = draggedElement.textContent;
         draggedElement.textContent = tempText;
