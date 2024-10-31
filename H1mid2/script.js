@@ -58,7 +58,14 @@ function initializeDragAndDrop() {
         listeners: {
             move: dragMoveListener,
             end: dragEndListener
-        }
+        },
+        modifiers: [
+            interact.modifiers.restrict({
+                restriction: 'parent',
+                endOnly: true
+            })
+        ],
+        allowFrom: ['touch', 'mouse']
     });
 
     interact('.dropzone').dropzone({
