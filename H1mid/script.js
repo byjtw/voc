@@ -20,7 +20,7 @@ function loadSentence() {
 
     shuffledWords.forEach((word, index) => {
         const wordElement = document.createElement("div");
-        wordElement.className = `word color${index % 8}`; // Assign a color class
+        wordElement.className = `word color${index % 8}`;
         wordElement.draggable = true;
         wordElement.textContent = word;
         wordElement.addEventListener("dragstart", dragStart);
