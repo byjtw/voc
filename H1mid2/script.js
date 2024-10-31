@@ -12,11 +12,13 @@ function updateGame() {
     const selectedIndex = document.getElementById('sentence-list').value;
     const selectedSentence = sentences[selectedIndex];
     const scrambled = scrambleSentence(selectedSentence.en);
-    
+
     document.getElementById('chinese-translation').innerText = selectedSentence.zh;
-    document.getElementById('scrambled-sentence').innerText = scrambled;
-    document.getElementById('user-input').value = '';
+    document.getElementById('scrambled-sentence').innerHTML = scrambled.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
+    document.getElementById('user-input').innerHTML = '';
     document.getElementById('feedback').innerText = '';
+
+    initializeDragAndDrop();
 }
 
 function scrambleSentence(sentence) {
@@ -38,7 +40,7 @@ function listenSentence() {
 function checkAnswer() {
     const selectedIndex = document.getElementById('sentence-list').value;
     const correctSentence = sentences[selectedIndex].en;
-    const userAnswer = document.getElementById('user-input').value;
+    const userAnswer = Array.from(document.getElementById('user-input').children).map(span => span.innerText).join(' ');
 
     if (userAnswer.trim() === correctSentence) {
         document.getElementById('feedback').innerText = "Correct!";
@@ -47,6 +49,52 @@ function checkAnswer() {
         document.getElementById('feedback').innerText = "Try again!";
         document.getElementById('feedback').style.color = "red";
     }
+}
+
+function initializeDragAndDrop() {
+    interact('.word').draggable({
+        inertia: true,
+        autoScroll: true,
+        listeners: {
+            move: dragMoveListener,
+            end: dragEndListener
+        },
+        modifiers: [
+            interact.modifiers.restrict({
+                restriction: 'parent',
+                endOnly: true
+            })
+        ],
+        allowFrom: ['touch', 'mouse']
+    });
+
+    interact('.dropzone').dropzone({
+        accept: '.word',
+        overlap: 0.75,
+        ondrop: function (event) {
+            event.target.appendChild(event.relatedTarget);
+            event.relatedTarget.style.transform = 'translate(0, 0)';
+            event.relatedTarget.setAttribute('data-x', 0);
+            event.relatedTarget.setAttribute('data-y', 0);
+        }
+    });
+}
+
+function dragMoveListener(event) {
+    const target = event.target;
+    const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+    const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+    target.style.transform = `translate(${x}px, ${y}px)`;
+    target.setAttribute('data-x', x);
+    target.setAttribute('data-y', y);
+}
+
+function dragEndListener(event) {
+    const target = event.target;
+    target.style.transform = 'translate(0, 0)';
+    target.setAttribute('data-x', 0);
+    target.setAttribute('data-y', 0);
 }
 
 // Initialize the game with the first sentence
