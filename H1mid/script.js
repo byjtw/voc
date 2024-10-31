@@ -1,83 +1,85 @@
-let sentences = [
-    { text: "My name is Teddy.", translation: "我的名字是泰迪。" },
-    { text: "I'm ten years old.", translation: "我十歲。" },
-    { text: "How are you?", translation: "你好嗎？" },
-    { text: "How old are you?", translation: "你幾歲？" }
+// script.js
+
+// Sample data for sentences, audio, and translations
+const sentences = [
+    { id: 1, text: "I love learning new languages.", audio: "audio1.mp3", translation: "我喜歡學習新語言。" },
+    { id: 2, text: "Practice makes perfect.", audio: "audio2.mp3", translation: "熟能生巧。" }
 ];
-let correctSentence = [];
-let shuffledWords = [];
 
+// Function to load sentence
 function loadSentence() {
-    const selectedIndex = document.getElementById("sentenceSelect").value;
-    if (selectedIndex === "") return;
+    const select = document.getElementById("sentence-select");
+    const selectedSentence = sentences.find(s => s.id === +select.value);
 
-    const selectedSentence = sentences[selectedIndex];
-    correctSentence = selectedSentence.text.split(" ");
-    shuffledWords = shuffleArray([...correctSentence]);
+    if (selectedSentence) {
+        // Split sentence into words and shuffle
+        const words = selectedSentence.text.split(" ");
+        const wordContainer = document.getElementById("word-container");
+        wordContainer.innerHTML = ""; // Clear previous words
 
-    const wordContainer = document.getElementById("wordContainer");
-    wordContainer.innerHTML = '';
+        // Create draggable word elements
+        words.forEach(word => {
+            const wordDiv = document.createElement("div");
+            wordDiv.className = "word";
+            wordDiv.textContent = word;
+            wordDiv.draggable = true;
 
-    shuffledWords.forEach((word, index) => {
-        const wordElement = document.createElement("div");
-        wordElement.className = "word";
-        wordElement.draggable = true;
-        wordElement.textContent = word;
-        wordElement.addEventListener("dragstart", dragStart);
-        wordElement.addEventListener("drop", drop);
-        wordElement.addEventListener("dragover", dragOver);
-        wordContainer.appendChild(wordElement);
-    });
+            wordDiv.addEventListener("dragstart", dragStart);
+            wordDiv.addEventListener("dragover", dragOver);
+            wordDiv.addEventListener("drop", drop);
 
-    document.getElementById("translation").textContent = `翻譯：${selectedSentence.translation}`;
-    document.getElementById("feedback").textContent = '';
-}
+            wordContainer.appendChild(wordDiv);
+        });
 
-function playSentenceAudio() {
-    const selectedIndex = document.getElementById("sentenceSelect").value;
-    if (selectedIndex === "") return;
-
-    const utterance = new SpeechSynthesisUtterance(sentences[selectedIndex].text);
-    utterance.lang = 'en-US';
-    window.speechSynthesis.speak(utterance);
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
-
-let draggedElement;
-
-function dragStart(event) {
-    draggedElement = event.target;
-}
-
-function drop(event) {
-    if (event.target.className === "word") {
-        const tempText = event.target.textContent;
-        event.target.textContent = draggedElement.textContent;
-        draggedElement.textContent = tempText;
+        // Display translation
+        document.getElementById("translation").textContent = `Translation: ${selectedSentence.translation}`;
     }
 }
 
-function dragOver(event) {
-    event.preventDefault();
+// Function to play audio
+function playAudio() {
+    const select = document.getElementById("sentence-select");
+    const selectedSentence = sentences.find(s => s.id === +select.value);
+
+    if (selectedSentence) {
+        const audio = new Audio(selectedSentence.audio);
+        audio.play();
+    }
 }
 
-function checkAnswer() {
-    const wordElements = document.querySelectorAll("#wordContainer .word");
-    const userAnswer = Array.from(wordElements).map(word => word.textContent).join(" ");
+// Drag-and-drop functionality
+let draggedWord;
+
+function dragStart(e) {
+    draggedWord = e.target;
+}
+
+function dragOver(e) {
+    e.preventDefault();
+}
+
+function drop(e) {
+    e.preventDefault();
+    if (e.target.className === "word") {
+        const currentWord = e.target;
+        const container = currentWord.parentNode;
+        container.insertBefore(draggedWord, currentWord.nextSibling);
+    }
+}
+
+// Check if sentence order is correct
+function checkOrder() {
+    const select = document.getElementById("sentence-select");
+    const selectedSentence = sentences.find(s => s.id === +select.value);
+    const words = Array.from(document.querySelectorAll("#word-container .word")).map(el => el.textContent).join(" ");
 
     const feedback = document.getElementById("feedback");
-    if (userAnswer === correctSentence.join(" ")) {
-        feedback.textContent = "正確！";
-        feedback.style.color = "green";
+    if (words === selectedSentence.text) {
+        feedback.textContent = "Great job! 🎉 You got it right!";
+        playEncouragementAudio(); // Optional function to play encouragement sound
     } else {
-        feedback.textContent = "錯誤，請再試一次。";
-        feedback.style.color = "red";
+        feedback.textContent = "Keep trying! 👍";
     }
 }
+
+// Optional function for e

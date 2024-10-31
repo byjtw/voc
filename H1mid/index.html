@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>句型重組練習</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sentence Reordering Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>句型重組練習</h1>
+        <h1>Sentence Reordering Game</h1>
         
-        <label for="sentenceSelect">選擇要練習的句型：</label>
-        <select id="sentenceSelect" onchange="loadSentence()">
-            <option value="" disabled selected>請選擇句型</option>
-            <option value="0">My name is Teddy.</option>
-            <option value="1">I'm ten years old.</option>
-            <option value="2">How are you?</option>
-            <option value="3">How old are you?</option>
+        <!-- Sentence Selection Menu -->
+        <label for="sentence-select">Choose a sentence:</label>
+        <select id="sentence-select" onchange="loadSentence()">
+            <option value="0">Select a sentence</option>
+            <option value="1">I love learning new languages.</option>
+            <option value="2">Practice makes perfect.</option>
+            <!-- Add more sentences as needed -->
         </select>
 
-        <button id="playAudio" onclick="playSentenceAudio()">🔊 播放語音</button>
-        
-        <div id="translation"></div>
+        <!-- Audio Button and Translation Display -->
+        <button onclick="playAudio()">🔊 Listen</button>
+        <p id="translation">Translation: </p>
 
-        <div id="gameArea">
-            <div id="wordContainer"></div>
-            <button onclick="checkAnswer()">檢查答案</button>
-            <div id="feedback"></div>
-        </div>
+        <!-- Draggable Words for Reordering -->
+        <div id="word-container" class="word-container"></div>
+        
+        <!-- Submit Button -->
+        <button onclick="checkOrder()">Submit</button>
+        
+        <!-- Feedback Display -->
+        <div id="feedback" class="feedback"></div>
     </div>
 
     <script src="script.js"></script>
