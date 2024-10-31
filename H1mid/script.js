@@ -26,6 +26,12 @@ function loadSentence() {
         wordElement.addEventListener("dragstart", dragStart);
         wordElement.addEventListener("drop", drop);
         wordElement.addEventListener("dragover", dragOver);
+
+        // Add touch event listeners for mobile devices
+        wordElement.addEventListener("touchstart", touchStart);
+        wordElement.addEventListener("touchmove", touchMove);
+        wordElement.addEventListener("touchend", touchEnd);
+
         wordContainer.appendChild(wordElement);
     });
 
@@ -68,7 +74,7 @@ function dragOver(event) {
     event.preventDefault();
 }
 
-// 手機觸控事件
+// Mobile touch event handlers
 function touchStart(event) {
     draggedElement = event.target;
 }
@@ -86,6 +92,13 @@ function touchMove(event) {
 function touchEnd() {
     draggedElement = null;
 }
+
+function swapText(element1, element2) {
+    const tempText = element1.textContent;
+    element1.textContent = element2.textContent;
+    element2.textContent = tempText;
+}
+
 function checkAnswer() {
     const wordElements = document.querySelectorAll("#wordContainer .word");
     const userAnswer = Array.from(wordElements).map(word => word.textContent).join(" ");
