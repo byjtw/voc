@@ -20,7 +20,7 @@ function loadSentence() {
 
     shuffledWords.forEach((word, index) => {
         const wordElement = document.createElement("div");
-        wordElement.className = "word";
+        wordElement.className = `word color${index % 8}`; // Assign a color class
         wordElement.draggable = true;
         wordElement.textContent = word;
         wordElement.addEventListener("dragstart", dragStart);
@@ -63,7 +63,7 @@ function dragStart(event) {
 }
 
 function drop(event) {
-    if (event.target.className === "word") {
+    if (event.target.className.includes("word")) {
         const tempText = event.target.textContent;
         event.target.textContent = draggedElement.textContent;
         draggedElement.textContent = tempText;
@@ -84,7 +84,7 @@ function touchMove(event) {
     const touch = event.touches[0];
     const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
 
-    if (targetElement && targetElement.className === "word" && targetElement !== draggedElement) {
+    if (targetElement && targetElement.className.includes("word") && targetElement !== draggedElement) {
         swapText(targetElement, draggedElement);
     }
 }
