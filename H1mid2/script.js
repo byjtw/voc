@@ -12,11 +12,13 @@ function updateGame() {
     const selectedIndex = document.getElementById('sentence-list').value;
     const selectedSentence = sentences[selectedIndex];
     const scrambled = scrambleSentence(selectedSentence.en);
-    
+
     document.getElementById('chinese-translation').innerText = selectedSentence.zh;
     document.getElementById('scrambled-sentence').innerHTML = scrambled.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
     document.getElementById('user-input').innerHTML = '';
     document.getElementById('feedback').innerText = '';
+
+    initializeDragAndDrop();
 }
 
 function scrambleSentence(sentence) {
@@ -49,19 +51,25 @@ function checkAnswer() {
     }
 }
 
-interact('.word').draggable({
-    inertia: true,
-    autoScroll: true,
-    onmove: dragMoveListener
-});
+function initializeDragAndDrop() {
+    interact('.word').draggable({
+        inertia: true,
+        autoScroll: true,
+        onmove: dragMoveListener,
+        onend: dragEndListener
+    });
 
-interact('#user-input').dropzone({
-    accept: '.word',
-    overlap: 0.75,
-    ondrop: function (event) {
-        event.target.appendChild(event.relatedTarget);
-    }
-});
+    interact('.dropzone').dropzone({
+        accept: '.word',
+        overlap: 0.75,
+        ondrop: function (event) {
+            event.target.appendChild(event.relatedTarget);
+            event.relatedTarget.style.transform = 'translate(0, 0)';
+            event.relatedTarget.setAttribute('data-x', 0);
+            event.relatedTarget.setAttribute('data-y', 0);
+        }
+    });
+}
 
 function dragMoveListener(event) {
     const target = event.target;
@@ -71,6 +79,13 @@ function dragMoveListener(event) {
     target.style.transform = `translate(${x}px, ${y}px)`;
     target.setAttribute('data-x', x);
     target.setAttribute('data-y', y);
+}
+
+function dragEndListener(event) {
+    const target = event.target;
+    target.style.transform = 'translate(0, 0)';
+    target.setAttribute('data-x', 0);
+    target.setAttribute('data-y', 0);
 }
 
 // Initialize the game with the first sentence
