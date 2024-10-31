@@ -68,6 +68,24 @@ function dragOver(event) {
     event.preventDefault();
 }
 
+// 手機觸控事件
+function touchStart(event) {
+    draggedElement = event.target;
+}
+
+function touchMove(event) {
+    event.preventDefault();
+    const touch = event.touches[0];
+    const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
+
+    if (targetElement && targetElement.className === "word" && targetElement !== draggedElement) {
+        swapText(targetElement, draggedElement);
+    }
+}
+
+function touchEnd() {
+    draggedElement = null;
+}
 function checkAnswer() {
     const wordElements = document.querySelectorAll("#wordContainer .word");
     const userAnswer = Array.from(wordElements).map(word => word.textContent).join(" ");
