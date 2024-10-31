@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentence Reordering Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Unscramble Sentence Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sentence Reordering Game</h1>
-        
-        <!-- Sentence Selection Menu -->
-        <label for="sentence-select">Choose a sentence:</label>
-        <select id="sentence-select" onchange="loadSentence()">
-            <option value="0">Select a sentence</option>
-            <option value="1">I love learning new languages.</option>
-            <option value="2">Practice makes perfect.</option>
-            <!-- Add more sentences as needed -->
-        </select>
-
-        <!-- Audio Button and Translation Display -->
-        <button onclick="playAudio()">🔊 Listen</button>
-        <p id="translation">Translation: </p>
-
-        <!-- Draggable Words for Reordering -->
-        <div id="word-container" class="word-container"></div>
-        
-        <!-- Submit Button -->
-        <button onclick="checkOrder()">Submit</button>
-        
-        <!-- Feedback Display -->
-        <div id="feedback" class="feedback"></div>
+    <div class="game-container">
+        <h1>Unscramble Sentence Game</h1>
+        <div class="sentence-selection">
+            <label for="sentence-list">Choose a sentence:</label>
+            <select id="sentence-list">
+                <option value="0">The cat is on the mat.</option>
+                <option value="1">The sun is shining brightly.</option>
+                <option value="2">She likes to read books.</option>
+            </select>
+            <button id="listen-btn">Listen</button>
+        </div>
+        <div class="translation">
+            <p id="chinese-translation"></p>
+        </div>
+        <div class="unscramble-area">
+            <p id="scrambled-sentence"></p>
+            <input type="text" id="user-input" placeholder="Type the correct sentence here...">
+        </div>
+        <button id="check-answer-btn">Check Answer</button>
+        <p id="feedback"></p>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

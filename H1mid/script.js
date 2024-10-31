@@ -1,85 +1,53 @@
-// script.js
-
-// Sample data for sentences, audio, and translations
 const sentences = [
-    { id: 1, text: "I love learning new languages.", audio: "audio1.mp3", translation: "我喜歡學習新語言。" },
-    { id: 2, text: "Practice makes perfect.", audio: "audio2.mp3", translation: "熟能生巧。" }
+    { en: "The cat is on the mat.", zh: "貓在墊子上。" },
+    { en: "The sun is shining brightly.", zh: "陽光燦爛。" },
+    { en: "She likes to read books.", zh: "她喜歡讀書。" },
 ];
 
-// Function to load sentence
-function loadSentence() {
-    const select = document.getElementById("sentence-select");
-    const selectedSentence = sentences.find(s => s.id === +select.value);
+document.getElementById('sentence-list').addEventListener('change', updateGame);
+document.getElementById('listen-btn').addEventListener('click', listenSentence);
+document.getElementById('check-answer-btn').addEventListener('click', checkAnswer);
 
-    if (selectedSentence) {
-        // Split sentence into words and shuffle
-        const words = selectedSentence.text.split(" ");
-        const wordContainer = document.getElementById("word-container");
-        wordContainer.innerHTML = ""; // Clear previous words
+function updateGame() {
+    const selectedIndex = document.getElementById('sentence-list').value;
+    const selectedSentence = sentences[selectedIndex];
+    const scrambled = scrambleSentence(selectedSentence.en);
+    
+    document.getElementById('chinese-translation').innerText = selectedSentence.zh;
+    document.getElementById('scrambled-sentence').innerText = scrambled;
+    document.getElementById('user-input').value = '';
+    document.getElementById('feedback').innerText = '';
+}
 
-        // Create draggable word elements
-        words.forEach(word => {
-            const wordDiv = document.createElement("div");
-            wordDiv.className = "word";
-            wordDiv.textContent = word;
-            wordDiv.draggable = true;
-
-            wordDiv.addEventListener("dragstart", dragStart);
-            wordDiv.addEventListener("dragover", dragOver);
-            wordDiv.addEventListener("drop", drop);
-
-            wordContainer.appendChild(wordDiv);
-        });
-
-        // Display translation
-        document.getElementById("translation").textContent = `Translation: ${selectedSentence.translation}`;
+function scrambleSentence(sentence) {
+    const words = sentence.split(' ');
+    for (let i = words.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [words[i], words[j]] = [words[j], words[i]];
     }
+    return words.join(' ');
 }
 
-// Function to play audio
-function playAudio() {
-    const select = document.getElementById("sentence-select");
-    const selectedSentence = sentences.find(s => s.id === +select.value);
-
-    if (selectedSentence) {
-        const audio = new Audio(selectedSentence.audio);
-        audio.play();
-    }
+function listenSentence() {
+    const selectedIndex = document.getElementById('sentence-list').value;
+    const sentence = sentences[selectedIndex].en;
+    const speech = new SpeechSynthesisUtterance(sentence);
+    speechSynthesis.speak(speech);
 }
 
-// Drag-and-drop functionality
-let draggedWord;
+function checkAnswer() {
+    const selectedIndex = document.getElementById('sentence-list').value;
+    const correctSentence = sentences[selectedIndex].en;
+    const userAnswer = document.getElementById('user-input').value;
 
-function dragStart(e) {
-    draggedWord = e.target;
-}
-
-function dragOver(e) {
-    e.preventDefault();
-}
-
-function drop(e) {
-    e.preventDefault();
-    if (e.target.className === "word") {
-        const currentWord = e.target;
-        const container = currentWord.parentNode;
-        container.insertBefore(draggedWord, currentWord.nextSibling);
-    }
-}
-
-// Check if sentence order is correct
-function checkOrder() {
-    const select = document.getElementById("sentence-select");
-    const selectedSentence = sentences.find(s => s.id === +select.value);
-    const words = Array.from(document.querySelectorAll("#word-container .word")).map(el => el.textContent).join(" ");
-
-    const feedback = document.getElementById("feedback");
-    if (words === selectedSentence.text) {
-        feedback.textContent = "Great job! 🎉 You got it right!";
-        playEncouragementAudio(); // Optional function to play encouragement sound
+    if (userAnswer.trim() === correctSentence) {
+        document.getElementById('feedback').innerText = "Correct!";
+        document.getElementById('feedback').style.color = "green";
     } else {
-        feedback.textContent = "Keep trying! 👍";
+        document.getElementById('feedback').innerText = "Try again!";
+        document.getElementById('feedback').style.color = "red";
     }
 }
 
-// Optional function for e
+// Initialize the game with the first sentence
+updateGame();
