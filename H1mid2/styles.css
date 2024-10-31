@@ -14,6 +14,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
+    max-width: 90%;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -27,6 +29,9 @@ h1 {
 #user-input {
     width: 80%;
     padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 #check-answer-btn {
@@ -45,4 +50,14 @@ h1 {
 #feedback {
     margin-top: 10px;
     font-weight: bold;
+}
+
+.word {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
 }
