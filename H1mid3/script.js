@@ -53,10 +53,14 @@ function shuffleArray(array) {
 }
 
 let draggedElement;
+let touchOffsetX, touchOffsetY;
 
 function dragStart(event) {
     if (event.type === "touchstart") {
+        const touch = event.touches[0];
         draggedElement = event.target;
+        touchOffsetX = touch.clientX - draggedElement.getBoundingClientRect().left;
+        touchOffsetY = touch.clientY - draggedElement.getBoundingClientRect().top;
         draggedElement.classList.add("dragging");
     } else {
         draggedElement = event.target;
@@ -69,8 +73,8 @@ function dragMove(event) {
     if (event.type === "touchmove") {
         const touch = event.touches[0];
         draggedElement.style.position = 'absolute';
-        draggedElement.style.left = `${touch.pageX - draggedElement.offsetWidth / 2}px`;
-        draggedElement.style.top = `${touch.pageY - draggedElement.offsetHeight / 2}px`;
+        draggedElement.style.left = `${touch.clientX - touchOffsetX}px`;
+        draggedElement.style.top = `${touch.clientY - touchOffsetY}px`;
     }
 }
 
@@ -78,35 +82,6 @@ function drop(event) {
     if (event.type === "touchend") {
         const touch = event.changedTouches[0];
         const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
-        if (dropTarget && dropTarget.className === "word") {
+        if (dropTarget && dropTarget.className === "word" && dropTarget !== draggedElement) {
             const tempText = dropTarget.textContent;
             dropTarget.textContent = draggedElement.textContent;
-            draggedElement.textContent = tempText;
-        }
-        draggedElement.style.position = 'static';  // Reset position
-        draggedElement.classList.remove("dragging");
-        draggedElement = null;
-    } else if (event.target.className === "word") {
-        const tempText = event.target.textContent;
-        event.target.textContent = draggedElement.textContent;
-        draggedElement.textContent = tempText;
-    }
-}
-
-function dragOver(event) {
-    event.preventDefault();
-}
-
-function checkAnswer() {
-    const wordElements = document.querySelectorAll("#wordContainer .word");
-    const userAnswer = Array.from(wordElements).map(word => word.textContent).join(" ");
-
-    const feedback = document.getElementById("feedback");
-    if (userAnswer === correctSentence.join(" ")) {
-        feedback.textContent = "正確！";
-        feedback.style.color = "green";
-    } else {
-        feedback.textContent = "錯誤，請再試一次。";
-        feedback.style.color = "red";
-    }
-}
