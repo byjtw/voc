@@ -55,8 +55,10 @@ function initializeDragAndDrop() {
     interact('.word').draggable({
         inertia: true,
         autoScroll: true,
-        onmove: dragMoveListener,
-        onend: dragEndListener
+        listeners: {
+            move: dragMoveListener,
+            end: dragEndListener
+        }
     });
 
     interact('.dropzone').dropzone({
