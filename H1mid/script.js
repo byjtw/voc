@@ -1,14 +1,18 @@
+let sentences = [
+    { text: "My name is Teddy.", translation: "我的名字是泰迪。" },
+    { text: "I'm ten years old.", translation: "我十歲。" },
+    { text: "How are you?", translation: "你好嗎？" },
+    { text: "How old are you?", translation: "你幾歲？" }
+];
 let correctSentence = [];
 let shuffledWords = [];
 
-function startGame() {
-    const input = document.getElementById('sentenceInput').value.trim();
-    if (!input) {
-        alert("請先輸入句子！");
-        return;
-    }
+function loadSentence() {
+    const selectedIndex = document.getElementById("sentenceSelect").value;
+    if (selectedIndex === "") return;
 
-    correctSentence = input.split(" ");
+    const selectedSentence = sentences[selectedIndex];
+    correctSentence = selectedSentence.text.split(" ");
     shuffledWords = shuffleArray([...correctSentence]);
 
     const wordContainer = document.getElementById("wordContainer");
@@ -25,7 +29,17 @@ function startGame() {
         wordContainer.appendChild(wordElement);
     });
 
+    document.getElementById("translation").textContent = `翻譯：${selectedSentence.translation}`;
     document.getElementById("feedback").textContent = '';
+}
+
+function playSentenceAudio() {
+    const selectedIndex = document.getElementById("sentenceSelect").value;
+    if (selectedIndex === "") return;
+
+    const utterance = new SpeechSynthesisUtterance(sentences[selectedIndex].text);
+    utterance.lang = 'en-US';
+    window.speechSynthesis.speak(utterance);
 }
 
 function shuffleArray(array) {
