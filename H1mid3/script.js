@@ -57,6 +57,7 @@ let draggedElement;
 function dragStart(event) {
     if (event.type === "touchstart") {
         draggedElement = event.target;
+        draggedElement.classList.add("dragging");
     } else {
         draggedElement = event.target;
     }
@@ -65,10 +66,12 @@ function dragStart(event) {
 function dragMove(event) {
     // Prevent default to avoid scrolling on touch devices
     event.preventDefault();
-    const touch = event.touches[0];
-    draggedElement.style.position = 'absolute';
-    draggedElement.style.left = `${touch.pageX - draggedElement.offsetWidth / 2}px`;
-    draggedElement.style.top = `${touch.pageY - draggedElement.offsetHeight / 2}px`;
+    if (event.type === "touchmove") {
+        const touch = event.touches[0];
+        draggedElement.style.position = 'absolute';
+        draggedElement.style.left = `${touch.pageX - draggedElement.offsetWidth / 2}px`;
+        draggedElement.style.top = `${touch.pageY - draggedElement.offsetHeight / 2}px`;
+    }
 }
 
 function drop(event) {
@@ -81,6 +84,7 @@ function drop(event) {
             draggedElement.textContent = tempText;
         }
         draggedElement.style.position = 'static';  // Reset position
+        draggedElement.classList.remove("dragging");
         draggedElement = null;
     } else if (event.target.className === "word") {
         const tempText = event.target.textContent;
