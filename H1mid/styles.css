@@ -1,114 +1,42 @@
-let sentences = [
-    { text: "My name is Teddy.", translation: "我的名字是泰迪。" },
-    { text: "I'm ten years old.", translation: "我十歲。" },
-    { text: "How are you?", translation: "你好嗎？" },
-    { text: "How old are you?", translation: "你幾歲？" }
-];
-let correctSentence = [];
-let shuffledWords = [];
-
-function loadSentence() {
-    const selectedIndex = document.getElementById("sentenceSelect").value;
-    if (selectedIndex === "") return;
-
-    const selectedSentence = sentences[selectedIndex];
-    correctSentence = selectedSentence.text.split(" ");
-    shuffledWords = shuffleArray([...correctSentence]);
-
-    const wordContainer = document.getElementById("wordContainer");
-    wordContainer.innerHTML = '';
-
-    shuffledWords.forEach((word, index) => {
-        const wordElement = document.createElement("div");
-        wordElement.className = "word";
-        wordElement.draggable = true;
-        wordElement.textContent = word;
-        wordElement.addEventListener("dragstart", dragStart);
-        wordElement.addEventListener("drop", drop);
-        wordElement.addEventListener("dragover", dragOver);
-
-        // Add touch event listeners for mobile devices
-        wordElement.addEventListener("touchstart", touchStart);
-        wordElement.addEventListener("touchmove", touchMove);
-        wordElement.addEventListener("touchend", touchEnd);
-
-        wordContainer.appendChild(wordElement);
-    });
-
-    document.getElementById("translation").textContent = `翻譯：${selectedSentence.translation}`;
-    document.getElementById("feedback").textContent = '';
+/* Existing CSS styles */
+* {
+    box-sizing: border-box;
 }
 
-function playSentenceAudio() {
-    const selectedIndex = document.getElementById("sentenceSelect").value;
-    if (selectedIndex === "") return;
-
-    const utterance = new SpeechSynthesisUtterance(sentences[selectedIndex].text);
-    utterance.lang = 'en-US';
-    window.speechSynthesis.speak(utterance);
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    padding: 10px; /* Added padding for mobile */
 }
 
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
+.container {
+    text-align: center;
+    max-width: 100%; /* Changed max-width for mobile */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-let draggedElement;
-
-function dragStart(event) {
-    draggedElement = event.target;
+#wordContainer {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center;
+    margin-top: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
 
-function drop(event) {
-    if (event.target.className === "word") {
-        const tempText = event.target.textContent;
-        event.target.textContent = draggedElement.textContent;
-        draggedElement.textContent = tempText;
-    }
-}
-
-function dragOver(event) {
-    event.preventDefault();
-}
-
-// Mobile touch event handlers
-function touchStart(event) {
-    draggedElement = event.target;
-}
-
-function touchMove(event) {
-    event.preventDefault();
-    const touch = event.touches[0];
-    const targetElement = document.elementFromPoint(touch.clientX, touch.clientY);
-
-    if (targetElement && targetElement.className === "word" && targetElement !== draggedElement) {
-        swapText(targetElement, draggedElement);
-    }
-}
-
-function touchEnd() {
-    draggedElement = null;
-}
-
-function swapText(element1, element2) {
-    const tempText = element1.textContent;
-    element1.textContent = element2.textContent;
-    element2.textContent = tempText;
-}
-
-function checkAnswer() {
-    const wordElements = document.querySelectorAll("#wordContainer .word");
-    const userAnswer = Array.from(wordElements).map(word => word.textContent).join(" ");
-
-    const feedback = document.getElementById("feedback");
-    if (userAnswer === correctSentence.join(" ")) {
-        feedback.textContent = "正確！";
-        feedback.style.color = "green";
-    } else {
-        feedback.textContent = "錯誤，請再試一次。";
-        feedback.style.color = "red";
-    }
-}
+.word {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em; /* Ensure text is readable on mobile */
+    white-space: nowrap; /* Ensure individual words don't wrap
