@@ -85,3 +85,32 @@ function drop(event) {
         if (dropTarget && dropTarget.className === "word" && dropTarget !== draggedElement) {
             const tempText = dropTarget.textContent;
             dropTarget.textContent = draggedElement.textContent;
+            draggedElement.textContent = tempText;
+        }
+        draggedElement.style.position = 'static';  // Reset position
+        draggedElement.classList.remove("dragging");
+        draggedElement = null;
+    } else if (event.target.className === "word" && event.target !== draggedElement) {
+        const tempText = event.target.textContent;
+        event.target.textContent = draggedElement.textContent;
+        draggedElement.textContent = tempText;
+    }
+}
+
+function dragOver(event) {
+    event.preventDefault();
+}
+
+function checkAnswer() {
+    const wordElements = document.querySelectorAll("#wordContainer .word");
+    const userAnswer = Array.from(wordElements).map(word => word.textContent).join(" ");
+
+    const feedback = document.getElementById("feedback");
+    if (userAnswer === correctSentence.join(" ")) {
+        feedback.textContent = "正確！";
+        feedback.style.color = "green";
+    } else {
+        feedback.textContent = "錯誤，請再試一次。";
+        feedback.style.color = "red";
+    }
+}
