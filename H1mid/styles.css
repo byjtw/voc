@@ -1,4 +1,3 @@
-/* Existing CSS styles */
 * {
     box-sizing: border-box;
 }
@@ -11,12 +10,12 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f2f2f2;
-    padding: 10px; /* Added padding for mobile */
+    padding: 10px;
 }
 
 .container {
     text-align: center;
-    max-width: 100%; /* Changed max-width for mobile */
+    max-width: 100%;
     width: 100%;
     padding: 20px;
     background-color: #fff;
@@ -26,10 +25,10 @@ body {
 
 #wordContainer {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap;
     justify-content: center;
     margin-top: 20px;
-    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-x: auto;
 }
 
 .word {
@@ -38,5 +37,27 @@ body {
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1em; /* Ensure text is readable on mobile */
-    white-space: nowrap; /* Ensure individual words don't wrap
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#translation {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .word {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
