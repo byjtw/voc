@@ -1,35 +1,87 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>句型重組練習</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>句型重組遊戲</title>
+    <style>
+        /* 設定基本樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        #sentence-container, #answer-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+        }
+        .word {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: grab;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>句型重組練習</h1>
-        
-        <label for="sentenceSelect">選擇要練習的句型：</label>
-        <select id="sentenceSelect" onchange="loadSentence()">
-            <option value="" disabled selected>請選擇句型</option>
-            <option value="0">I am going to the park.</option>
-            <option value="1">She likes to read books.</option>
-            <option value="2">They are playing soccer.</option>
-        </select>
 
-        <button id="playAudio" onclick="playSentenceAudio()">🔊 播放語音</button>
-        
-        <div id="translation"></div>
+    <h1>句型重組遊戲</h1>
 
-        <div id="gameArea">
-            <div id="wordContainer"></div>
-            <div id="answerContainer"></div>
-            <button onclick="checkAnswer()">檢查答案</button>
-            <div id="feedback"></div>
-        </div>
+    <!-- 可拖放的單字 -->
+    <div id="sentence-container">
+        <span class="word" draggable="true">I</span>
+        <span class="word" draggable="true">am</span>
+        <span class="word" draggable="true">happy</span>
     </div>
 
-    <script src="script.js"></script>
+    <!-- 放置重組結果的區域 -->
+    <div id="answer-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <span>請將句子組合正確：</span>
+    </div>
+
+    <button onclick="checkAnswer()">確認答案</button>
+    <div id="feedback"></div>
+
+    <script>
+        // 允許拖放功能
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var word = document.getElementById(data);
+            event.target.appendChild(word);
+        }
+
+        // 檢查答案是否正確
+        function checkAnswer() {
+            const correctOrder = ["I", "am", "happy"];
+            const answerContainer = document.getElementById("answer-container");
+            const answerWords = Array.from(answerContainer.querySelectorAll(".word")).map(word => word.textContent);
+
+            if (JSON.stringify(answerWords) === JSON.stringify(correctOrder)) {
+                document.getElementById("feedback").innerText = "正確！加油！";
+            } else {
+                document.getElementById("feedback").innerText = "再試一次！";
+            }
+        }
+    </script>
+
 </body>
 </html>
+
