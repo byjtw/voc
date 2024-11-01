@@ -1,51 +1,106 @@
-* {
-    box-sizing: border-box;
-}
-
+/* 基本樣式設定 */
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
     margin: 0;
-    background-color: #f2f2f2;
+    padding: 0;
+    height: 100vh;
+    background-color: #f9f9f9;
 }
 
-.container {
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-#wordContainer {
+#sentence-container, #answer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.word {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #4CAF50;
     border-radius: 5px;
-    user-select: none; /* Prevent text selection on touch devices */
+    min-width: 80%;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
+#sentence-container {
+    background-color: #e8f5e9;
+}
+
+#answer-container {
+    background-color: #fff3e0;
+}
+
+/* 拖放單字的樣式 */
+.word {
+    padding: 10px 15px;
+    background-color: #bbdefb;
+    border: 1px solid #64b5f6;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: #1e88e5;
+    cursor: grab;
+    transition: transform 0.2s;
+    user-select: none;
+}
+
+/* 拖動時的樣式 */
+.word:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* 回饋訊息的樣式 */
 #feedback {
-    margin-top: 20px;
+    font-size: 1.2em;
     font-weight: bold;
+    color: #ff5722;
+    margin-top: 10px;
 }
 
-#translation {
-    margin-top: 15px;
-    font-size: 1.1em;
-    color: #333;
+/* 按鈕樣式 */
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* 手機相容樣式 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #sentence-container, #answer-container {
+        min-width: 90%;
+        padding: 15px;
+    }
+
+    .word {
+        font-size: 1.2em;
+        padding: 8px 12px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
 }
