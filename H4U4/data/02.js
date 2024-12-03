@@ -80,26 +80,18 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[tw]ent[y]##二十##mp3/twenty.mp3
-[thir]t[y]##三十##mp3/thirty.mp3
-f[or]t[y]##四十##mp3/forty.mp3
-fift[y]##五十##mp3/fifty.mp3
-[tw]ent[y]-f[i]v[e]##二十五##mp3/twenty-five.mp3
-[one]##一##mp3/one.mp3
-t[wo]##二##mp3/two.mp3
-[th]r[ee]##三##mp3/three.mp3
-f[ou]r##四個##mp3/four.mp3
-f[i]v[e]##五##mp3/five.mp3
-[six]##六##mp3/six.mp3
-sev[e]n##七##mp3/seven.mp3
-[eigh]t##八##mp3/eight.mp3
-n[i]n[e]##九##mp3/nine.mp3
-[ten]##十##mp3/ten.mp3
-[e]lev[e]n##十一##mp3/eleven.mp3
-[tw]elv[e]##十二##mp3/twelve.mp3
-[o]'clo[ck]##點整##mp3/o'clock.mp3
-[wha]t t[i]m[e]##幾點##mp3/what time.mp3
-[it]##它##mp3/it.mp3
-[is]##是_用於第三人稱##mp3/is.mp3
+[bag]##包包##mp3/bag.mp3
+[box]##盒子##mp3/box.mp3
+[chai]r##椅子##mp3/chair.mp3
+c[o]mp[u]t[er]##電腦##mp3/computer.mp3
+[desk]##書桌##mp3/desk.mp3
+t[able]##桌子##mp3/table.mp3
+[in]##在...裡面##mp3/in.mp3
+[on]##在...上面##mp3/on.mp3
+und[er]##在...下面##mp3/under.mp3
+b[y]##在旁邊##mp3/by.mp3
+m[y]##我的##mp3/my.mp3
+y[ou]r##你的##mp3/your.mp3
+[where]##在哪裡##mp3/where.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

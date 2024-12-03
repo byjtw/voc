@@ -39,9 +39,9 @@ datafolder = 'data';
 //  以半形逗號為【選項文字】與【題庫檔名】兩欄的分欄符號
 //
 menuItemLines = function(){/*--這一行請勿更改--
+四下U4單字抄寫,03.js
 四下U4單字依發音規則,01.js
 四下U4單字需記憶,02.js
-四下U4單字抄寫,03.js
 四下U4單字亂碼,04.js
 四下U4單字挑戰,05.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
