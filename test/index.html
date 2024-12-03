@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .game-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        .word-display {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #2d3748;
+            min-height: 3rem;
+        }
+        .input-container {
+            margin: 1.5rem 0;
+        }
+        input {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border: 3px solid #4299e1;
+            border-radius: 0.5rem;
+            width: 80%;
+            max-width: 300px;
+            margin: 0.5rem;
+        }
+        button {
+            background-color: #4299e1;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin: 0.5rem;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2b6cb0;
+        }
+        .feedback {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            min-height: 2rem;
+        }
+        .score {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin: 1rem 0;
+        }
+        .hint-button {
+            background-color: #48bb78;
+        }
+        .hint-button:hover {
+            background-color: #2f855a;
+        }
+        .letter-bank {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .letter {
+            background-color: #e2e8f0;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            user-select: none;
+        }
+        .letter:hover {
+            background-color: #cbd5e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Spelling Adventure!</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="word-display" id="wordDisplay"></div>
+        <div class="letter-bank" id="letterBank"></div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type the word here..." autocomplete="off">
+        </div>
+        <button onclick="checkSpelling()">Check Spelling</button>
+        <button class="hint-button" onclick="playSound()">Hear Word</button>
+        <div class="feedback" id="feedback"></div>
+    </div>
+
+    <script>
+        const words = [
+            'cat', 'dog', 'bird', 'fish', 'tree',
+            'book', 'play', 'home', 'jump', 'run',
+            'smile', 'happy', 'water', 'green', 'blue'
+        ];
+        
+        let currentWord = '';
+        let score = 0;
+        let attempts = 0;
+        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+        
+        function createLetterBank(word) {
+            const letters = word.split('');
+            const extraLetters = 'abcdefghijklmnopqrstuvwxyz'
+                .split('')
+                .filter(l => !word.includes(l))
+                .slice(0, 5);
+            
+            const allLetters = shuffleArray([...letters, ...extraLetters]);
+            const letterBank = document.getElementById('letterBank');
+            letterBank.innerHTML = '';
+            
+            allLetters.forEach(letter => {
+                const letterDiv = document.createElement('div');
+                letterDiv.className = 'letter';
+                letterDiv.textContent = letter;
+                letterDiv.onclick = () => addLetterToInput(letter);
+                letterBank.appendChild(letterDiv);
+            });
+        }
+        
+        function addLetterToInput(letter) {
+            const input = document.getElementById('userInput');
+            input.value += letter;
+        }
+        
+        function newWord() {
+            currentWord = words[Math.floor(Math.random() * words.length)];
+            document.getElementById('wordDisplay').textContent = currentWord;
+            document.getElementById('userInput').value = '';
+            document.getElementById('feedback').textContent = '';
+            createLetterBank(currentWord);
+            
+            // Hide the word after 3 seconds
+            setTimeout(() => {
+                document.getElementById('wordDisplay').textContent = '???';
+            }, 3000);
+        }
+        
+        function checkSpelling() {
+            const userInput = document.getElementById('userInput').value.toLowerCase().trim();
+            const feedback = document.getElementById('feedback');
+            
+            if (userInput === currentWord) {
+                feedback.textContent = '🎉 Correct! Well done!';
+                feedback.style.color = '#48bb78';
+                score += 10;
+                document.getElementById('score').textContent = score;
+                setTimeout(newWord, 1500);
+            } else {
+                feedback.textContent = '❌ Try again!';
+                feedback.style.color = '#e53e3e';
+                attempts++;
+                
+                if (attempts >= 2) {
+                    document.getElementById('wordDisplay').textContent = currentWord;
+                    setTimeout(() => {
+                        attempts = 0;
+                        newWord();
+                    }, 2000);
+                }
+            }
+        }
+        
+        function playSound() {
+            const utterance = new SpeechSynthesisUtterance(currentWord);
+            utterance.rate = 0.8; // Slightly slower speech
+            speechSynthesis.speak(utterance);
+        }
+        
+        // Start the game
+        newWord();
+        
+        // Add keyboard support
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkSpelling();
+            }
+        });
+    </script>
+</body>
+</html>
