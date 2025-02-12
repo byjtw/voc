@@ -86,10 +86,10 @@ questionLines = function(){/*--這一行請勿更改--
 [the] [UK]##英國the UK##mp3/the UK.mp3
 [the] [USA]##美國the USA##mp3/the USA.mp3
 [Spain]##西班牙Spain##mp3/Spain.mp3
-[Singapore]##新加坡Singapore##mp3/Singapore.mp3
 [India]##印度India##mp3/India.mp3
 [where]##哪裡where##mp3/where.mp3
 [from]##從from##mp3/from.mp3
 [country]##國家country##mp3/country.mp3
+[Singapore]##新加坡Singapore##mp3/Singapore.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

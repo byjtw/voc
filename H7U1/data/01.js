@@ -86,10 +86,10 @@ Au[s]tr[ali]a##澳洲##mp3/Australia.mp3
 the [UK]##英國##mp3/the UK.mp3
 the [USA]##美國##mp3/the USA.mp3
 [S]pai[n]##西班牙##mp3/Spain.mp3
-[Sing]a[p]ore##新加坡##mp3/Singapore.mp3
 [Indi]a##印度##mp3/India.mp3
 [where]##哪裡##mp3/where.mp3
 [fr]o[m]##從##mp3/from.mp3
 [c]ou[n]try##國家##mp3/country.mp3
+S[in]ga[p]ore##新加坡##mp3/Singapore.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
