@@ -94,5 +94,8 @@ f[ee]t##足複數##mp3/feet.mp3
 [hand]##手##mp3/hand.mp3
 [ar]m##手臂##mp3/arm.mp3
 [leg]##腿##mp3/leg.mp3
+[my]##我的##mp3/my.mp3
+[her]##她的##mp3/her.mp3
+[his]##他的##mp3/his.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 

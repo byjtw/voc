@@ -94,5 +94,8 @@ questionLines = function(){/*--這一行請勿更改--
 [hand]##手adnh##mp3/hand.mp3
 [arm]##手臂ram##mp3/arm.mp3
 [leg]##腿lge##mp3/leg.mp3
+[my]##我的ym##mp3/my.mp3
+[her]##她的reh##mp3/her.mp3
+[his]##他的sih##mp3/his.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
