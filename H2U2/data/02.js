@@ -84,7 +84,7 @@ dan[ce]##舞蹈##mp3/dance.mp3
 [draw]##畫##mp3/draw.mp3
 j[u]mp##跳##mp3/jump.mp3
 r[ea]d##讀##mp3/read.mp3
-si[ng]##那##mp3/sing.mp3
+si[ng]##唱歌##mp3/sing.mp3
 [sw]im##游泳##mp3/swim.mp3
 [can]##能##mp3/can.mp3
 [can]'t##不能##mp3/can't.mp3

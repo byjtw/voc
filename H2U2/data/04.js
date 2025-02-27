@@ -84,7 +84,7 @@ questionLines = function(){/*--這一行請勿更改--
 [draw]##畫rawd##mp3/draw.mp3
 [jump]##跳jmpu##mp3/jump.mp3
 [read]##讀aerd##mp3/read.mp3
-[sing]##那ings##mp3/sing.mp3
+[sing]##唱歌ings##mp3/sing.mp3
 [swim]##游泳misw##mp3/swim.mp3
 [can]##能anc##mp3/can.mp3
 [can]'[t]##不能ntca##mp3/can't.mp3

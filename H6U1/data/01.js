@@ -97,5 +97,6 @@ ea[r]##耳朵##mp3/ear.mp3
 [my]##我的##mp3/my.mp3
 [her]##她的##mp3/her.mp3
 [his]##他的##mp3/his.mp3
+[wrong]##不對的##mp3/wrong.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
