@@ -89,7 +89,7 @@ questionLines = function(){/*--這一行請勿更改--
 [turtle]##龜turtle##mp3/turtle.mp3
 [monkey]##猴monkey##mp3/monkey.mp3
 [animal]##動物animal##mp3/animal.mp3
-[how many]##多少how many##mp3/how many.mp3
+[how] [many]##多少how many##mp3/how many.mp3
 [there]##那裡there##mp3/there.mp3
 [are]##是are##mp3/are.mp3
 [is]##是is##mp3/is.mp3
