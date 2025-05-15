@@ -87,7 +87,7 @@ questionLines = function(){/*--這一行請勿更改--
 [music]##音樂isucm##mp3/music.mp3
 [PE]##體育EP##mp3/PE.mp3
 [science]##自然ienscce##mp3/science.mp3
-[social studies]##社會lcoisa stduise##mp3/social studies.mp3
+[social] [studies]##社會lcoisa stduise##mp3/social studies.mp3
 [do]##助動詞_非第三人稱od##mp3/do.mp3
 [does]##助動詞_第三人稱oeds##mp3/does.mp3
 [have]##有_非第三人稱vahe##mp3/have.mp3
