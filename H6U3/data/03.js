@@ -88,11 +88,12 @@ questionLines = function(){/*--這一行請勿更改--
 [salad]##沙拉salad##mp3/salad.mp3
 [soup]##湯soup##mp3/soup.mp3
 [noodles]##麵條noodles##mp3/noodles.mp3
-[would like]##想要would like##mp3/would like.mp3
+[would] [like]##想要would like##mp3/would like.mp3
 [brunch]##早午餐brunch##mp3/brunch.mp3
 [some]##一些some##mp3/some.mp3
 [please]##請please##mp3/please.mp3
 [for]##為了for##mp3/for.mp3
 [snack]##點心snack##mp3/snack.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
+
 
