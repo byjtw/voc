@@ -101,7 +101,7 @@ questionLines = function(){/*--這一行請勿更改--
 [really]##真的##mp3/really.mp3
 [singer]##歌手##mp3/singer.mp3
 [son]##兒子##mp3/son.mp3
-[two]##也##mp3/too.mp3
+[too]##也##mp3/too.mp3
 [uncle]##叔叔##mp3/uncle.mp3
 [very]##非常##mp3/very.mp3
 [wife]##妻子##mp3/wife.mp3
@@ -110,4 +110,5 @@ questionLines = function(){/*--這一行請勿更改--
 [year] old/[years] old##歲單數_歲複數##mp3/year old years old.mp3
 [young]##年輕的##mp3/young.mp3
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
+
 
