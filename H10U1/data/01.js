@@ -85,7 +85,7 @@ questionLines = function(){/*--這一行請勿更改--
 [salt]##鹽salt
 [oil]##油oil
 [water]##水water
-[chocolate]##朱古力chocolate
+[chocolate]##巧克力chocolate
 [bottle]##瓶子bottle
 [bag]##包包bag
 [cup]##杯子cup
