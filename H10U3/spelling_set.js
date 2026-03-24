@@ -19,7 +19,7 @@ CR_LF_First_Pos = CR_LF_test.indexOf('_LF')-'CR_LF'.indexOf('_LF');
 
 //
 //上方標題
-title = '南一國一下U2單字高手';
+title = '南一國一下U3單字高手';
 
 //
 //虛擬鍵盤是否使用數字(使用: true, 不使用: false)
@@ -39,7 +39,7 @@ datafolder = 'data';
 //  以半形逗號為【選項文字】與【題庫檔名】兩欄的分欄符號
 //
 menuItemLines = function(){/*--這一行請勿更改--
-單字高手:H10U2單字抄寫,01.js
-單字高手:H10U2單字挑戰,02.js
+單字高手:H10U3單字抄寫,01.js
+單字高手:H10U3單字挑戰,02.js
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
