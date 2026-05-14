@@ -80,20 +80,20 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[draw]##畫draw
-[paint]##塗paint
-[dance]##舞蹈dance
-[swim]##游泳swim
-[jump]##跳jump
-[run]##跑步run
-[park]##公園park
-[gym]##健身房gym
-[floor]##地面floor
-[picture]##圖片picture
-[now]##現在now
-[busy]##忙碌的busy
-[careful]##小心的careful
-[around]##大約around
-[save]##節省save
+[cook]##煮cook
+[clean]##乾淨的clean
+[wash]##洗wash
+[mop]##拖把mop
+[fix]##使固定fix
+[parents]##父母parents
+[housewife]##家庭主婦housewife
+[husband]##丈夫husband
+[wife]##妻子wife
+[kitchen]##廚房kitchen
+[living room]##客廳living room
+[bedroom]##臥室bedroom
+[sometimes]##有時sometimes
+[help]##幫助help
+[work]##工作work
 -----*/}.toString().slice("function(){/*--這一行請勿更改--".length+2+(typeof(CR_LF_First_Pos)!='undefined' ? CR_LF_First_Pos:0),-9);
 
