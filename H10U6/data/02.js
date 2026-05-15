@@ -80,17 +80,22 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[draw]##畫
-[paint]##塗
-[dance]##舞蹈
-[swim]##游泳
-[jump]##跳
-[run]##跑步
-[park]##公園
-[gym]##健身房
-[floor]##地面
-[picture]##圖片
-[now]##現在
+[yesterday]##昨天
+[ago]##之前
+[last]##最後的
+[before]##在...之前
+[library]##圖書館
+[museum]##博物館
+[supermarket]##超市場
+[restaurant]##餐廳
+[tired]##疲勞的
+[hungry]##飢餓的
+[sick]##生病的
+[brave]##勇敢的
+[was ]##曾是_am-is的過去式
+[were]##曾是_are的過去式
+[back]##後退
+[mountain]##山
 [busy]##忙碌的
 [careful]##小心的
 [around]##大約
