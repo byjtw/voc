@@ -80,17 +80,21 @@ seperator = '##';
 //    第三欄為MP3語音檔的路徑(沒有的話，tts_enabled = true 會以第一欄為TTS的朗讀內容)
 //
 questionLines = function(){/*--這一行請勿更改--
-[draw]##畫
-[paint]##塗
-[dance]##舞蹈
-[swim]##游泳
-[jump]##跳
-[run]##跑步
-[park]##公園
-[gym]##健身房
-[floor]##地面
-[picture]##圖片
-[now]##現在
+[cook]##煮
+[clean]##乾淨的
+[wash]##洗
+[mop]##拖把
+[fix]##使固定
+[parents]##父母
+[housewife]##家庭主婦
+[husband]##丈夫
+[wife]##妻子
+[kitchen]##廚房
+[living room]##客廳
+[bedroom]##臥室
+[sometimes]##有時
+[help]##幫助
+[work]##工作
 [busy]##忙碌的
 [careful]##小心的
 [around]##大約
