@@ -70,10 +70,10 @@ seperator = '##';
 questionLines = function(){/*--這一行請勿更改--
 [angry]##生氣的argyn##mp3/angry.mp3
 [happy]##快樂的yapph##mp3/happy.mp3
-[sad]##傷心das##mp3/sad.mp3
+[sad]##傷心的das##mp3/sad.mp3
 [hungry]##飢餓的hrynug##mp3/hungry.mp3
-[thirsty]##三十tiytrhs##mp3/thirsty.mp3
-[full]##滿的lflu##mp3/full.mp3
+[thirsty]##口渴的tiytrhs##mp3/thirsty.mp3
+[full]##飽的lflu##mp3/full.mp3
 [tired]##疲勞的etidr##mp3/tired.mp3
 [are]##是_用於第二人稱aer##mp3/are.mp3
 [is]##是_用於第三人稱si##mp3/is.mp3
